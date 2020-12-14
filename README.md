@@ -1,1 +1,1 @@
-Website for my personal base
+Website for myself
