@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <div
+    class="hero is-dark is-fullheight-with-navbar"
+    style="background: url('/about.jpeg') center top; background-size:cover;"
+  >
+    <div class="hero-body">
+      <div class="container max-800px">
+        <h1 class="title is-1 has-background-primary narrow-background">
+          {{ .Title }}
+        </h1>
+        {{ with .Params.herotext }}
+          <h2
+            class="title subtitle is-4 has-background-primary narrow-background"
+          >
+            {{ . }}
+          </h2>
+        {{ end }}
+      </div>
+    </div>
+    <div class="section">
+    <div class="container max-800px">
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+  </div>
+{{ end }}

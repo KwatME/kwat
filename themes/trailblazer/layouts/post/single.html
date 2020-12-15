@@ -44,6 +44,26 @@
           <div class="content">
             {{ .Content }}
           </div>
+          <section class="section">
+            <div class="columns is-centered">
+              <div class="column max-800px">
+                <div class="columns is-mobile">
+                  <div class="column has-text-left">
+                    {{ with .PrevInSection }}
+                      <p>Previous post</p>
+                      <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                  </div>
+                  <div class="column has-text-right">
+                    {{ with .NextInSection }}
+                      <p>Next post</p>
+                      <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
