@@ -1,0 +1,52 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+theme = "trailblazer"
+
+title = "Kwat"
+
+googleAnalytics = ""
+
+[params]
+description = "config params description"
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+
+[[menu.main]]
+  name = "Post"
+  url = "/post"
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact"
+
+[[menu.social]]
+  name = "GitHub"
+  url = "https://github.com/KwatME"
+  pre = "<i class='fab fa-github'></i>"
+
+[[menu.social]]
+  name = "Google Scholar"
+  url = "https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl"
+  pre = "<i class='ai ai-google-scholar ai-lg'></i>"
+
+[[menu.social]]
+  name = "Podcast"
+  url = "https://anchor.fm/kwat"
+  pre = "<i class='fa fa-podcast'></i>"
+
+[[menu.social]]
+  name = "YouTube"
+  url = "https://www.youtube.com/channel/UCYDeuExg0JHfKj4CfjQ260A"
+  pre = "<i class='fab fa-youtube'></i>"
+
+[[menu.social]]
+  name = "Twitter"
+  url = "https://twitter.com/KwatME"
+  pre = "<i class='fab fa-twitter'></i>"
+
+[[menu.social]]
+  name = "Instagram"
+  url = "https://www.instagram.com/kwat.me"
+  pre = "<i class='fab fa-instagram'></i>"
