@@ -17,14 +17,14 @@
     <div class="content">
       {{ .Summary }}
     </div>
-    <div class="tags is-pulled-right">
-      {{ range .Params.categories }}
-        <a
-          class="tag is-primary is-radiusless"
-          href="/categories/{{ . | urlize }}"
-          >{{ . }}</a
-        >
-      {{ end }}
-    </div>
+  </div>
+  <div class="tags is-pulled-right">
+    {{ range .Params.categories }}
+      <a
+        class="tag is-primary is-radiusless"
+        href="/categories/{{ . | urlize }}"
+        >{{ . }}</a
+      >
+    {{ end }}
   </div>
 </div>
