@@ -5,6 +5,13 @@ title = "Kwat"
 googleAnalytics = ""
 paginate = 8
 
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true
+
 [related]
 threshold = 0
 includeNewer = true
