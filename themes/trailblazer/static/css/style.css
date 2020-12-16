@@ -29,6 +29,6 @@ main {
 }
 
 .narrow-background {
-    display: table;
-    padding: 0.1em;
+  display: table;
+  padding: 0.1em;
 }

@@ -3,6 +3,7 @@ languageCode = "en-us"
 theme = "trailblazer"
 title = "Kwat"
 googleAnalytics = ""
+paginate = 8
 
 [params]
 author = "Kwat Medetgul-Ernar"
@@ -13,16 +14,12 @@ name = "About"
 url = "/about"
 
 [[menu.main]]
-name = "Post"
-url = "/post"
+name = "Posts"
+url = "/posts"
 
 [[menu.main]]
-name = "Category"
+name = "Topics"
 url = "/categories"
-
-[[menu.main]]
-name = "Contact"
-url = "/contact"
 
 [[menu.social]]
 name = "GitHub"
@@ -53,3 +50,8 @@ pre = "<i class='fab fa-twitter'></i>"
 name = "Instagram"
 url = "https://www.instagram.com/kwat.me"
 pre = "<i class='fab fa-instagram'></i>"
+
+[[menu.social]]
+name = "Zoom"
+url = "https://stanford.zoom.us/my/kwatme?pwd=Q2dzVXUwdmhuZzg2Vkc4aFliSFFnQT09"
+pre = "<i class='fa fa-phone'></i>"
