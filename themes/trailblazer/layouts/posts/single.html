@@ -68,4 +68,31 @@
       </div>
     </div>
   </section>
+  <div class="columns is-centered">
+    <div class="column max-800px">
+      <div class="container has-background-white">
+        <div class="section">
+          <h2 class="title is-4">Discuss on Twitter</h2>
+          {{ partial "widgets/tweet.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="columns is-centered">
+      <div class="column max-800px">
+        <div class="content">
+          <h2>Related content</h2>
+        </div>
+        <div class="columns">
+          {{ $related := (where (.Site.RegularPages.Related .) "Type" "post") | first 3 }}
+          {{ range $related }}
+            <div class="column is-one-third">
+              {{ partial "widgets/post-card-small.html" . }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
 {{ end }}

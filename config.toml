@@ -5,6 +5,19 @@ title = "Kwat"
 googleAnalytics = ""
 paginate = 8
 
+[related]
+threshold = 0
+includeNewer = true
+toLower = false
+
+[[related.indices]]
+name = "categories"
+weight = 100
+
+[[related.indices]]
+name = "date"
+weight = 10
+
 [params]
 author = "Kwat Medetgul-Ernar"
 description = "Website of Kwat Medetgul-Ernar"

@@ -4,12 +4,6 @@ title: Kwat Medetgul-Ernar
 herotext: I'm binge-watching One Piece (the greatest anime of all time)
 ---
 
-## Work
-
-I code, compute, and model diseases.
-
----
-
 ## Background
 
 Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Startup → Stanford MD-PhD candidate → More startup →

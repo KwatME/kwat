@@ -18,7 +18,7 @@ main {
 }
 
 .title-image {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .author-image {
@@ -31,4 +31,8 @@ main {
 .narrow-background {
   display: table;
   padding: 0.1em;
+}
+
+.card {
+  height: 100%;
 }
