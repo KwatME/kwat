@@ -1,45 +1,46 @@
 import React from "react"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
+import SocialIcons from "./social-icons"
+import Menus from "./menus"
 
 function Navigator() {
   return (
     <header>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+        />
+      </Helmet>
       <nav className="navbar" role="navigation">
         <div className="container">
           <div className="navbar-brand">
-            <a href="/" title="home" className="navbar-item">
+            <Link to="/" title="home" className="navbar-item">
               <span className="logo">
-                <h1>TITLE</h1>
+                <h1>Kwat</h1>
               </span>
-            </a>
+            </Link>
+
+            <SocialIcons />
             <a
-              href="https://github.com/KwatME"
-              target="_blank"
-              rel="noreferrer"
-              className="navbar-item is-hidden-desktop"
-              title="GitHub"
+              role="button"
+              className="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
             >
-              <FontAwesomeIcon icon={["fab", "github"]} />
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
-            <a
-              href="https://twitter.com/KwatME"
-              target="_blank"
-              rel="noreferrer"
-              className="navbar-item is-hidden-desktop"
-              title="Twitter"
-            >
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
-            </a>
-            <a
-              href="https://twitter.com/KwatME"
-              target="_blank"
-              rel="noreferrer"
-              className="navbar-item is-hidden-desktop"
-              title="Twitter"
-            >
-              <i className="ai ai-google-scholar ai-lg"></i>
-            </a>
+          </div>
+          <div className="navbar-menu">
+            <div className="navbar-start">
+              <SocialIcons />
+            </div>
+            <div className="navbar-end">
+              <Menus />
+            </div>
           </div>
         </div>
       </nav>
