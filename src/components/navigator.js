@@ -31,6 +31,15 @@ function Navigator() {
             >
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </a>
+            <a
+              href="https://twitter.com/KwatME"
+              target="_blank"
+              rel="noreferrer"
+              className="navbar-item is-hidden-desktop"
+              title="Twitter"
+            >
+              <i className="ai ai-google-scholar ai-lg"></i>
+            </a>
           </div>
         </div>
       </nav>
