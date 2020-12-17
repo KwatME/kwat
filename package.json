@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kwat",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website of Kwat Medetgul-Ernar",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kwat Medetgul-Ernar",
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -21,10 +21,8 @@
   "devDependencies": {
     "prettier": "2.1.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
+  "keywords": [],
+  "license": "LICENSE",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -36,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/KwatME/kwat"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/KwatME/kwat/issues"
   }
 }

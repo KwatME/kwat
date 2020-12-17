@@ -1,1 +1,1 @@
-Website for myself
+Website of Kwat Medetgul-Ernar
