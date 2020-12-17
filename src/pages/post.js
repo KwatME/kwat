@@ -1,13 +1,12 @@
 import React from "react"
-import Navigator from "../components/navigator"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 function Post() {
   return (
     <div>
-      <Navigator></Navigator>
-      <h1>This is Post</h1>
-      <Footer></Footer>
+      <Layout>
+        <h1>This is Post</h1>
+      </Layout>
     </div>
   )
 }

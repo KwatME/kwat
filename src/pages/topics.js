@@ -1,13 +1,12 @@
 import React from "react"
-import Navigator from "../components/navigator"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 function Topics() {
   return (
     <div>
-      <Navigator></Navigator>
-      <h1>This is Topics</h1>
-      <Footer></Footer>
+      <Layout>
+        <h1>This is Topics</h1>
+      </Layout>
     </div>
   )
 }
