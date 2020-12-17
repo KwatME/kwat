@@ -1,5 +1,0 @@
-{{ with .Params.tweet }}
-  {{- $url := printf "https://publish.twitter.com/oembed?url=%v" . -}}
-  {{- $json := getJSON $url -}}
-  {{ $json.html | safeHTML }}
-{{ end }}
