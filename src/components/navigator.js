@@ -1,31 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Navigator() {
   return (
     <header>
-      <h1>Kwat</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/posts">Posts</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-          <li>
+      <nav className="navbar" role="navigation">
+        <div className="container">
+          <div className="navbar-brand">
+            <a href="/" title="home" className="navbar-item">
+              <span className="logo">
+                <h1>TITLE</h1>
+              </span>
+            </a>
             <a
               href="https://github.com/KwatME"
               target="_blank"
               rel="noreferrer"
+              className="navbar-item is-hidden-desktop"
+              title="GitHub"
             >
-              GitHub
+              <FontAwesomeIcon icon={["fab", "github"]} />
             </a>
-          </li>
-        </ul>
+            <a
+              href="https://twitter.com/KwatME"
+              target="_blank"
+              rel="noreferrer"
+              className="navbar-item is-hidden-desktop"
+              title="Twitter"
+            >
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
   )

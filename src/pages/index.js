@@ -2,7 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 
 import "react-bulma-components/dist/react-bulma-components.min.css"
-import "./index.scss"
+
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+
+library.add(fab)
 
 function Index() {
   return (
@@ -10,9 +14,6 @@ function Index() {
       <Layout>
         <h1>This is Index</h1>
       </Layout>
-      <div className="buttons">
-        <a className="button is-primary">Primary</a>
-      </div>
     </div>
   )
 }

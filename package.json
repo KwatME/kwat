@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "author": "Kwat Medetgul-Ernar",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "bulma": "^0.9.1",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
