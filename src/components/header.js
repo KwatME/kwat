@@ -29,7 +29,7 @@ function Header() {
               </span>
             </Link>
 
-            <SocialIcons />
+            <SocialIcons className="navbar-item is-hidden-desktop" />
 
             <a
               role="button"
@@ -45,7 +45,7 @@ function Header() {
 
           <div className="navbar-menu">
             <div className="navbar-start">
-              <SocialIcons />
+              <SocialIcons className="navbar-item is-hidden-mobile" />
             </div>
 
             <div className="navbar-end">

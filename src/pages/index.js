@@ -30,7 +30,7 @@ function Index() {
       <BackgroundImage className="hero is-large" fluid={fluid}>
         <div className="hero-body">
           <div className="container has-text-centered">
-            <p className="title">Do Not Disturb</p>
+            <p className="title">Hi</p>
           </div>
         </div>
       </BackgroundImage>
