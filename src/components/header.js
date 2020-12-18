@@ -1,27 +1,19 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import SocialIcons from "./social-icons"
 import Menus from "./menus"
 
-function Navigator() {
+function Header({ siteTitle }) {
   return (
     <header>
-      <Helmet>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-        />
-      </Helmet>
       <nav className="navbar" role="navigation">
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" title="home" className="navbar-item">
               <span className="logo">
-                <h1>Kwat</h1>
+                <h1>{siteTitle}</h1>
               </span>
             </Link>
-
             <SocialIcons />
             <a
               role="button"
@@ -48,4 +40,4 @@ function Navigator() {
   )
 }
 
-export default Navigator
+export default Header
