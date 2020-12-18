@@ -1,15 +1,10 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
-
-import "react-bulma-components/dist/react-bulma-components.min.css"
 import BackgroundImage from "gatsby-background-image"
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { faPodcast, faPhone } from "@fortawesome/free-solid-svg-icons"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-
-library.add(fab, faPodcast, faPhone)
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Content from "../components/content"
 
 function Index() {
   const data = useStaticQuery(
@@ -30,13 +25,27 @@ function Index() {
 
   return (
     <Layout>
+      <SEO title="Index" />
+
       <BackgroundImage className="hero is-large" fluid={fluid}>
         <div className="hero-body">
           <div className="container has-text-centered">
-            <h1 className="title is-1">This is Index</h1>
+            <p className="title">Do Not Disturb</p>
           </div>
         </div>
       </BackgroundImage>
+
+      <Content>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+        <p>p</p>
+        Index
+      </Content>
     </Layout>
   )
 }

@@ -1,9 +1,8 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ title, description = "", meta = [] }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,16 +17,16 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  const siteTitle = site.siteMetadata.title
+
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+
+  const author = site.siteMetadata.author
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={siteTitle ? `%s | ${siteTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -51,7 +50,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: author,
         },
         {
           name: `twitter:title`,
@@ -64,19 +63,6 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

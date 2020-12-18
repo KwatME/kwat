@@ -1,7 +1,10 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Layout from "../components/layout"
 import BackgroundImage from "gatsby-background-image"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Content from "../components/content"
 
 function About() {
   const data = useStaticQuery(
@@ -14,14 +17,28 @@ function About() {
             }
           }
         }
+
+        site {
+          siteMetadata {
+            author
+
+            authorStatus
+          }
+        }
       }
     `
   )
 
   const fluid = data.file.childImageSharp.fluid
 
+  const author = data.site.siteMetadata.author
+
+  const authorStatus = data.site.siteMetadata.authorStatus
+
   return (
     <Layout>
+      <SEO title="About" />
+
       <BackgroundImage
         className="hero is-dark is-fullheight-with-navbar"
         fluid={fluid}
@@ -29,19 +46,27 @@ function About() {
         <div className="hero-body">
           <div className="container max-800px">
             <h1 className="title is-1 has-background-primary narrow-background">
-              Kwat Medetgul-Ernar
+              {author}
             </h1>
+
             <h4 className="title subtitle is-4 has-background-primary narrow-background">
-              Binge watching One Piece, the best anime of all time
+              {authorStatus}
             </h4>
           </div>
         </div>
       </BackgroundImage>
-      <div className="section">
-        <div className="container max-800px">
-          <div className="content">This is About</div>
-        </div>
-      </div>
+
+      <Content>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+        <p>p</p>
+        About
+      </Content>
     </Layout>
   )
 }

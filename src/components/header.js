@@ -1,9 +1,23 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+
 import SocialIcons from "./social-icons"
 import Menus from "./menus"
 
-function Header({ siteTitle }) {
+function Header() {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  const title = data.site.siteMetadata.title
+
   return (
     <header>
       <nav className="navbar" role="navigation">
@@ -11,10 +25,12 @@ function Header({ siteTitle }) {
           <div className="navbar-brand">
             <Link to="/" title="home" className="navbar-item">
               <span className="logo">
-                <h1>{siteTitle}</h1>
+                <h1>{title}</h1>
               </span>
             </Link>
+
             <SocialIcons />
+
             <a
               role="button"
               className="navbar-burger"
@@ -26,10 +42,12 @@ function Header({ siteTitle }) {
               <span aria-hidden="true"></span>
             </a>
           </div>
+
           <div className="navbar-menu">
             <div className="navbar-start">
               <SocialIcons />
             </div>
+
             <div className="navbar-end">
               <Menus />
             </div>

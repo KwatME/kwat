@@ -1,6 +1,6 @@
 import React from "react"
 
-function SocialIcon({ title, url, icon }) {
+function SocialIcon({ title, url, children }) {
   return (
     <a
       title={title}
@@ -9,7 +9,7 @@ function SocialIcon({ title, url, icon }) {
       rel="noreferrer"
       className="navbar-item is-hidden-desktop"
     >
-      <span className="icon">{icon}</span>
+      <span className="icon">{children}</span>
     </a>
   )
 }
