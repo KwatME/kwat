@@ -31,6 +31,7 @@ function Posts() {
   return (
     <Layout>
       <SEO title="Posts" />
+
       <Content>
         {edges.map(edge => {
           return (

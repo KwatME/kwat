@@ -25,7 +25,7 @@ function Index() {
 
   return (
     <Layout>
-      <SEO title="Index" />
+      <SEO title="Home" />
 
       <BackgroundImage className="hero is-large" fluid={fluid}>
         <div className="hero-body">
@@ -35,17 +35,7 @@ function Index() {
         </div>
       </BackgroundImage>
 
-      <Content>
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4>h4</h4>
-        <h5>h5</h5>
-        <h6>h6</h6>
-        <p>p</p>
-        <p>p</p>
-        Index
-      </Content>
+      <Content></Content>
     </Layout>
   )
 }

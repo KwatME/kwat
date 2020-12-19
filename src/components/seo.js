@@ -9,7 +9,9 @@ function SEO({ title, description = "", meta = [] }) {
         site {
           siteMetadata {
             title
+
             description
+
             author
           }
         }
@@ -30,6 +32,7 @@ function SEO({ title, description = "", meta = [] }) {
       meta={[
         {
           name: `description`,
+
           content: metaDescription,
         },
         {

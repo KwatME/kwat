@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,17 +8,16 @@ import Content from "../components/content"
 function _404() {
   return (
     <Layout>
-      <SEO title="_404" />
+      <SEO title="404: Page Not Found" />
+
       <Content>
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4>h4</h4>
-        <h5>h5</h5>
-        <h6>h6</h6>
-        <p>p</p>
-        <p>p</p>
-        _404
+        <h1>404: Page Not Found</h1>
+
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+
+        <p>
+          <Link to="/">Let&#39;s go home.</Link>
+        </p>
       </Content>
     </Layout>
   )

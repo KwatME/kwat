@@ -7,6 +7,7 @@ function Menus() {
       <Link to="/about" className="navbar-item">
         About
       </Link>
+
       <Link to="/posts" className="navbar-item">
         Posts
       </Link>
