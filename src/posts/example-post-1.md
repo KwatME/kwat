@@ -1,5 +1,6 @@
 ---
 title: "Example Post 1"
+author: "Luffy"
 date: "2020-12-18"
 images: []
 topics: []

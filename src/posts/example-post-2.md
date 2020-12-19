@@ -1,5 +1,6 @@
 ---
 title: "Example Post 2"
+author: "Zoro"
 date: "2020-12-18"
 images: []
 topics: []
