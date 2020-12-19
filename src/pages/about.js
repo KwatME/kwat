@@ -10,7 +10,7 @@ function About() {
   const data = useStaticQuery(
     graphql`
       query {
-        file: file(relativePath: { eq: "about.jpg" }) {
+        file: file(relativePath: { eq: "images/about.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp

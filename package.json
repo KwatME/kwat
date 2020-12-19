@@ -19,6 +19,7 @@
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-transformer-remark": "^2.13.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -26,9 +27,11 @@
     "react-bulma-components": "^3.4.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "remark": "^13.0.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-react": "^7.21.5",
@@ -38,7 +41,7 @@
   "license": "LICENSE",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

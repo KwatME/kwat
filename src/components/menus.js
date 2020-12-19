@@ -10,9 +10,6 @@ function Menus() {
       <Link to="/posts" className="navbar-item">
         Posts
       </Link>
-      <Link to="/topics" className="navbar-item">
-        Topics
-      </Link>
     </>
   )
 }

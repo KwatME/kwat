@@ -10,7 +10,7 @@ function Index() {
   const data = useStaticQuery(
     graphql`
       query {
-        file: file(relativePath: { eq: "home.jpg" }) {
+        file: file(relativePath: { eq: "images/home.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
