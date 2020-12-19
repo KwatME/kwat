@@ -31,6 +31,20 @@ module.exports = {
     // This (optional) plugin enables Progressive Web App + Offline functionality
     // `gatsby-plugin-offline`,
 
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
