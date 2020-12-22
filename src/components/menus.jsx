@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 function Menus() {
   return (
@@ -12,7 +12,7 @@ function Menus() {
         Posts
       </Link>
     </>
-  )
+  );
 }
 
-export default Menus
+export default Menus;

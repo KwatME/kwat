@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function Content({ children }) {
   return (
@@ -7,7 +7,7 @@ function Content({ children }) {
         <div className="content">{children}</div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Content
+export default Content;

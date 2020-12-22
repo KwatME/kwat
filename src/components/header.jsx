@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
-import SocialIcons from "./social-icons"
-import Menus from "./menus"
+import SocialIcons from "./socialIcons";
+import Menus from "./menus";
 
 function Header() {
   const data = useStaticQuery(graphql`
@@ -13,9 +13,7 @@ function Header() {
         }
       }
     }
-  `)
-
-  const title = data.site.siteMetadata.title
+  `);
 
   return (
     <header>
@@ -24,24 +22,11 @@ function Header() {
           <div className="navbar-brand">
             <Link to="/" title="home" className="navbar-item">
               <span className="logo">
-                <h1>{title}</h1>
+                <h1>{data.site.siteMetadata.title}</h1>
               </span>
             </Link>
 
             <SocialIcons className="navbar-item is-hidden-desktop" />
-
-            <a
-              role="button"
-              className="navbar-burger"
-              aria-label="menu"
-              aria-expanded="false"
-            >
-              <span aria-hidden="true"></span>
-
-              <span aria-hidden="true"></span>
-
-              <span aria-hidden="true"></span>
-            </a>
           </div>
 
           <div className="navbar-menu">
@@ -56,7 +41,7 @@ function Header() {
         </div>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

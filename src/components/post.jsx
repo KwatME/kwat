@@ -1,32 +1,37 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Content from "../components/content"
+import Layout from "./layout";
+import SEO from "./seo";
+import Content from "./content";
 
-export const query = graphql`
+export const result = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+
         date
       }
+
       wordCount {
         words
       }
+
       timeToRead
+
       html
     }
   }
-`
+`;
 
 function Post(props) {
-  const node = props.data.markdownRemark
+  const node = props.data.markdownRemark;
 
   return (
     <Layout>
       <SEO title="Post" />
+
       <Content>
         <section className="section">
           <div className="columns is-centered">
@@ -39,6 +44,7 @@ function Post(props) {
                     <div className="columns is-vcentered is-mobile">
                       <div className="column">
                         <p>{node.frontmatter.date}</p>
+
                         <p>
                           {node.wordCount.words} words | {node.timeToRead}{" "}
                           minutes
@@ -46,7 +52,8 @@ function Post(props) {
                       </div>
                     </div>
                   </div>
-                  <div className="column"></div>
+
+                  <div className="column" />
                 </div>
               </div>
 
@@ -55,13 +62,13 @@ function Post(props) {
                 dangerouslySetInnerHTML={{
                   __html: node.html,
                 }}
-              ></div>
+              />
             </div>
           </div>
         </section>
       </Content>
     </Layout>
-  )
+  );
 }
 
-export default Post
+export default Post;

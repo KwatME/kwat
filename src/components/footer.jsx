@@ -1,5 +1,5 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 function Footer() {
   const data = useStaticQuery(graphql`
@@ -10,21 +10,19 @@ function Footer() {
         }
       }
     }
-  `)
-
-  const author = data.site.siteMetadata.author
+  `);
 
   return (
     <footer className="footer">
       <div className="container">
         <div className="columns has-text-centered">
           <div className="column">
-            {author} © {new Date().getFullYear()}
+            {data.site.siteMetadata.author} © {new Date().getFullYear()}
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

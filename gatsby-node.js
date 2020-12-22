@@ -1,17 +1,17 @@
-const path = require("path")
+const path = require("path");
 
 module.exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
-  if (node.internal.type == "MarkdownRemark") {
-    const slug = path.basename(node.fileAbsolutePath, ".md")
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = path.basename(node.fileAbsolutePath, ".md");
 
-    createNodeField({ node, name: "slug", value: slug })
+    createNodeField({ node, name: "slug", value: slug });
   }
-}
+};
 
 module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(`
     query {
@@ -25,11 +25,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
-  const postTemplate = path.resolve(`src/components/post.js`)
+  console.log(result);
 
-  result.data.allMarkdownRemark.edges.forEach(edge => {
+  const postTemplate = path.resolve("src/components/post.jsx");
+
+  result.data.allMarkdownRemark.edges.forEach((edge) => {
     createPage({
       path: `posts/${edge.node.fields.slug}`,
 
@@ -38,6 +40,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.fields.slug,
       },
-    })
-  })
-}
+    });
+  });
+};
