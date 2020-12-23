@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 import styleUnit from "../functions/styleUnit";
 
-function postCard(edge) {
+function PostCard(edge) {
   const node = edge.node;
 
   return (
@@ -12,17 +12,11 @@ function postCard(edge) {
       <Link to={node.fields.slug}>
         <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
       </Link>
-
       <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-
       {node.frontmatter.date}
-
       {styleUnit(node.wordCount.words, "word")}
-
       {styleUnit(node.timeToRead, "minute")}
-
       {node.excerpt}
-
       {node.frontmatter.topics.map((topic) => (
         <Link to="/">{topic}</Link>
       ))}
@@ -30,4 +24,4 @@ function postCard(edge) {
   );
 }
 
-export default postCard;
+export default PostCard;

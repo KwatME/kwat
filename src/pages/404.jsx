@@ -2,8 +2,7 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
 
 function Four04() {
   const data = useStaticQuery(graphql`
@@ -28,8 +27,7 @@ function Four04() {
   `);
 
   return (
-    <Layout>
-      <SEO pageTitle="404" />
+    <Layout pageTitle="404" pageDescription="">
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">

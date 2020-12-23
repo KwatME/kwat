@@ -2,8 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
 
 function About() {
   const data = useStaticQuery(graphql`
@@ -28,8 +27,7 @@ function About() {
   `);
 
   return (
-    <Layout>
-      <SEO pageTitle="About" />
+    <Layout pageTitle="About" pageDescription="">
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">

@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import postCard from "../components/postCard";
+import Layout from "../components/Layout";
+import PostCard from "../components/PostCard";
 
 function Posts() {
   const data = useStaticQuery(graphql`
@@ -38,10 +37,9 @@ function Posts() {
   `);
 
   return (
-    <Layout>
-      <SEO pageTitle="Posts" />
+    <Layout pageTitle="Posts" pageDescription="">
       These are the recent posts.
-      {data.allMarkdownRemark.edges.map(postCard)}
+      {data.allMarkdownRemark.edges.map(PostCard)}
     </Layout>
   );
 }

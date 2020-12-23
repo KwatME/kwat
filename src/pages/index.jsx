@@ -2,8 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
 
 function Index() {
   const data = useStaticQuery(graphql`
@@ -19,8 +18,7 @@ function Index() {
   `);
 
   return (
-    <Layout>
-      <SEO pageTitle="Home" />
+    <Layout pageTitle="" pageDescription="">
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-large">
           <div className="hero-body">
