@@ -24,8 +24,10 @@ function Index() {
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-large">
           <div className="hero-body">
-            <div className="container has-text-centered">
-              <h1 className="title">Are you ready?</h1>
+            <div className="container">
+              <div className="content has-text-centered">
+                <h1 className="title">Are you ready?</h1>
+              </div>
             </div>
           </div>
         </section>

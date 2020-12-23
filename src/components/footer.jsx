@@ -15,7 +15,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
-        {data.site.siteMetadata.author} © {new Date().getFullYear()}
+        <h6 className="title">
+          {data.site.siteMetadata.author} © {new Date().getFullYear()}
+        </h6>
       </div>
     </footer>
   );
