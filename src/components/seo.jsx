@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO(pageTitle, pageDescription) {
+function SEO(props) {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -16,21 +16,20 @@ function SEO(pageTitle, pageDescription) {
   `);
 
   let title = "";
-
+  const pageTitle = props.pageTitle;
   const siteTitle = data.site.siteMetadata.title;
-
-  if (pageTitle) {
-    title = `${pageTitle} | ${siteTitle}`;
-  } else {
+  if (pageTitle === undefined) {
     title = siteTitle;
+  } else {
+    title = `${pageTitle} | ${siteTitle}`;
   }
 
   let description = "";
-
-  if (pageDescription) {
-    description = pageDescription;
-  } else {
+  const pageDescription = props.pageDescription;
+  if (pageDescription === undefined) {
     description = data.site.siteMetadata.description;
+  } else {
+    description = pageDescription;
   }
 
   return (

@@ -37,7 +37,7 @@ function Posts() {
   `);
 
   return (
-    <Layout pageTitle="Posts" pageDescription="">
+    <Layout pageTitle="Posts">
       These are the recent posts.
       {data.allMarkdownRemark.edges.map(PostCard)}
     </Layout>

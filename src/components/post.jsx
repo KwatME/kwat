@@ -23,7 +23,6 @@ export const result = graphql`
 
 function Post(props) {
   const node = props.data.markdownRemark;
-
   const pageTitle = node.frontmatter.title;
 
   return (

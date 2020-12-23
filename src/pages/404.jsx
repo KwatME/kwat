@@ -27,7 +27,7 @@ function Four04() {
   `);
 
   return (
-    <Layout pageTitle="404" pageDescription="">
+    <Layout pageTitle="404">
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">

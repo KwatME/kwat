@@ -18,7 +18,7 @@ function Index() {
   `);
 
   return (
-    <Layout pageTitle="" pageDescription="">
+    <Layout>
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-large">
           <div className="hero-body">

@@ -27,7 +27,7 @@ function About() {
   `);
 
   return (
-    <Layout pageTitle="About" pageDescription="">
+    <Layout pageTitle="About">
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">
