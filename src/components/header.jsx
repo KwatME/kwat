@@ -15,7 +15,7 @@ function Header() {
     }
   `);
 
-  const [isActive, setisActive] = React.useState(false);
+  const [isActive, setIsActive] = React.useState(false);
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -32,7 +32,7 @@ function Header() {
           aria-label="menu"
           aria-expanded="false"
           onClick={() => {
-            setisActive(!isActive);
+            setIsActive(!isActive);
           }}
         >
           <span aria-hidden="true" />

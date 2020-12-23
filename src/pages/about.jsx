@@ -15,13 +15,14 @@ function About() {
           }
         }
       }
-
       site {
         siteMetadata {
           author
-
           authorStatus
         }
+      }
+      markdownRemark(fields: { slug: { eq: "about" } }) {
+        html
       }
     }
   `);
@@ -30,11 +31,38 @@ function About() {
     <Layout>
       <SEO pageTitle="About" />
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
-        {data.site.siteMetadata.author}
-
-        {data.site.siteMetadata.authorStatus}
+        <section className="hero is-fullheight-with-navbar">
+          <div className="hero-body">
+            <div className="container">
+              <div className="content">
+                <h1
+                  className="title has-text-white has-background-primary"
+                  style={{ display: "table", padding: "0px 4px" }}
+                >
+                  {data.site.siteMetadata.author}
+                </h1>
+                <h3
+                  className="subtitle has-text-white has-background-primary"
+                  style={{ display: "table", padding: "0px 4px" }}
+                >
+                  {data.site.siteMetadata.authorStatus}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
       </BackgroundImage>
-      This is the about page.
+      <section className="section">
+        <div className="container">
+          <div className="content">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

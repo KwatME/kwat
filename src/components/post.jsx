@@ -10,18 +10,13 @@ export const result = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
-
         date
-
         topics
       }
-
       wordCount {
         words
       }
-
       timeToRead
-
       html
     }
   }
