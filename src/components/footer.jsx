@@ -13,17 +13,11 @@ function Footer() {
   `);
 
   return (
-    <footer
-      style={{
-        backgroundColor: "#d8d8d8",
-        color: "#000000",
-        textAlign: "center",
-        fontSize: 24,
-        padding: 24,
-      }}
-    >
-      <div>
-        {data.site.siteMetadata.author} © {new Date().getFullYear()}
+    <footer className="footer">
+      <div className="content has-text-centered">
+        <div>
+          {data.site.siteMetadata.author} © {new Date().getFullYear()}
+        </div>
       </div>
     </footer>
   );
