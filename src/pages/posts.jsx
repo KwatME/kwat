@@ -1,24 +1,36 @@
 import React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Content from "../components/content";
+import postCard from "../components/postCard";
 
 function Posts() {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
-              title
-
-              date
-            }
             fields {
               slug
             }
+            frontmatter {
+              title
+              date
+              topics
+              image {
+                childImageSharp {
+                  fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
+            wordCount {
+              words
+            }
+            timeToRead
+            excerpt
           }
         }
       }
@@ -28,15 +40,8 @@ function Posts() {
   return (
     <Layout>
       <SEO pageTitle="Posts" />
-
-      <Content>
-        {data.allMarkdownRemark.edges.map((edge) => (
-          <Link to={`/posts/${edge.node.fields.slug}`}>
-            <h2>{edge.node.frontmatter.title}</h2>
-            <p>{edge.node.frontmatter.date}</p>
-          </Link>
-        ))}
-      </Content>
+      These are the recent posts.
+      {data.allMarkdownRemark.edges.map(postCard)}
     </Layout>
   );
 }

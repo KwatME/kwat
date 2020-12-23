@@ -4,7 +4,6 @@ import BackgroundImage from "gatsby-background-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Content from "../components/content";
 
 function About() {
   const data = useStaticQuery(graphql`
@@ -30,25 +29,12 @@ function About() {
   return (
     <Layout>
       <SEO pageTitle="About" />
+      <BackgroundImage fluid={data.file.childImageSharp.fluid}>
+        {data.site.siteMetadata.author}
 
-      <BackgroundImage
-        className="hero is-dark is-fullheight-with-navbar"
-        fluid={data.file.childImageSharp.fluid}
-      >
-        <div className="hero-body">
-          <div className="container max-800px">
-            <h1 className="title is-1 has-background-primary narrow-background">
-              {data.site.siteMetadata.author}
-            </h1>
-
-            <h4 className="title subtitle is-4 has-background-primary narrow-background">
-              {data.site.siteMetadata.authorStatus}
-            </h4>
-          </div>
-        </div>
+        {data.site.siteMetadata.authorStatus}
       </BackgroundImage>
-
-      <Content></Content>
+      This is the about page.
     </Layout>
   );
 }

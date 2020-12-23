@@ -4,7 +4,6 @@ import BackgroundImage from "gatsby-background-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Content from "../components/content";
 
 function Index() {
   const data = useStaticQuery(graphql`
@@ -22,19 +21,10 @@ function Index() {
   return (
     <Layout>
       <SEO pageTitle="Home" />
-
-      <BackgroundImage
-        className="hero is-large"
-        fluid={data.file.childImageSharp.fluid}
-      >
-        <div className="hero-body">
-          <div className="container has-text-centered">
-            <p className="title">Hi</p>
-          </div>
-        </div>
+      <BackgroundImage fluid={data.file.childImageSharp.fluid}>
+        Hi
       </BackgroundImage>
-
-      <Content></Content>
+      This is the index page.
     </Layout>
   );
 }

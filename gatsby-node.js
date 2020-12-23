@@ -4,9 +4,11 @@ module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === "MarkdownRemark") {
-    const slug = path.basename(node.fileAbsolutePath, ".md");
-
-    createNodeField({ node, name: "slug", value: slug });
+    createNodeField({
+      node,
+      name: "slug",
+      value: path.basename(node.fileAbsolutePath, ".md"),
+    });
   }
 };
 
@@ -27,15 +29,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  console.log(result);
-
-  const postTemplate = path.resolve("src/components/post.jsx");
-
   result.data.allMarkdownRemark.edges.forEach((edge) => {
     createPage({
       path: `posts/${edge.node.fields.slug}`,
 
-      component: postTemplate,
+      component: path.resolve("src/components/post.jsx"),
 
       context: {
         slug: edge.node.fields.slug,

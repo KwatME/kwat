@@ -2,24 +2,32 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ pageTitle, pageDescription = "", meta = [] }) {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
+function SEO(props) {
+  const pageTitle = props.pageTitle;
 
-            description
+  const pageDescription = "";
 
-            author
-          }
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+
+          description
+
+          author
         }
       }
-    `
-  );
+    }
+  `);
 
-  const description = pageDescription || data.site.siteMetadata.description;
+  let description = "";
+
+  if (pageDescription) {
+    description = pageDescription;
+  } else {
+    description = data.site.siteMetadata.description;
+  }
 
   return (
     <Helmet
@@ -66,13 +74,8 @@ function SEO({ pageTitle, pageDescription = "", meta = [] }) {
 
           content: description,
         },
-      ].concat(meta)}
+      ]}
     >
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-      />
-
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"

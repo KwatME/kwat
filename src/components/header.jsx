@@ -17,29 +17,11 @@ function Header() {
 
   return (
     <header>
-      <nav className="navbar" role="navigation">
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" title="home" className="navbar-item">
-              <span className="logo">
-                <h1>{data.site.siteMetadata.title}</h1>
-              </span>
-            </Link>
+      <Link to="/">{data.site.siteMetadata.title}</Link>
 
-            <SocialIcons className="navbar-item is-hidden-desktop" />
-          </div>
+      <SocialIcons />
 
-          <div className="navbar-menu">
-            <div className="navbar-start">
-              <SocialIcons className="navbar-item is-hidden-mobile" />
-            </div>
-
-            <div className="navbar-end">
-              <Menus />
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Menus />
     </header>
   );
 }
