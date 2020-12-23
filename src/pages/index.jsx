@@ -22,9 +22,14 @@ function Index() {
     <Layout>
       <SEO pageTitle="Home" />
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
-        Hi
+        <section className="hero is-large">
+          <div className="hero-body">
+            <div className="container has-text-centered">
+              <h1 className="title">Are you ready?</h1>
+            </div>
+          </div>
+        </section>
       </BackgroundImage>
-      This is the index page.
     </Layout>
   );
 }

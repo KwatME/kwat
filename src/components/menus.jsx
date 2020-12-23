@@ -4,11 +4,11 @@ import { Link } from "gatsby";
 function Menus() {
   return (
     <>
-      <Link to="/about" className="navbar-item">
+      <Link className="navbar-item" to="/about">
         About
       </Link>
 
-      <Link to="/posts" className="navbar-item">
+      <Link className="navbar-item" to="/posts">
         Posts
       </Link>
     </>

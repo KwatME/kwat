@@ -20,29 +20,30 @@ function Header() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
+        <Link className="navbar-item" to="/">
           {data.site.siteMetadata.title}
         </Link>
-        <a
+
+        <button
+          className={`navbar-burger button is-white ${
+            isActive ? "is-active" : ""
+          }`}
+          type="button"
+          aria-label="menu"
+          aria-expanded="false"
           onClick={() => {
             setisActive(!isActive);
           }}
-          role="button"
-          className={`navbar-burger ${isActive ? "is-active" : ""}`}
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+          <span aria-hidden="true" />
+
+          <span aria-hidden="true" />
+
+          <span aria-hidden="true" />
+        </button>
       </div>
 
-      <div
-        id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}
-      >
+      <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
         <div className="navbar-start">
           <SocialIcons />
         </div>
