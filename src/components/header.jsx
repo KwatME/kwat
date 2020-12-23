@@ -16,12 +16,24 @@ function Header() {
   `);
 
   return (
-    <header>
+    <header
+      style={{
+        backgroundColor: "#d8d8d8",
+        color: "#000000",
+        textAlign: "center",
+        fontSize: 24,
+        padding: 24,
+      }}
+    >
       <Link to="/">{data.site.siteMetadata.title}</Link>
 
-      <SocialIcons />
+      <div style={{ float: "left" }}>
+        <SocialIcons />
+      </div>
 
-      <Menus />
+      <div style={{ float: "right" }}>
+        <Menus />
+      </div>
     </header>
   );
 }

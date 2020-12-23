@@ -5,13 +5,15 @@ import Footer from "./footer";
 
 function Layout(props) {
   return (
-    <>
+    <div
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
       <Header />
 
-      <main>{props.children}</main>
+      <main style={{ flex: 1 }}>{props.children}</main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
