@@ -14,7 +14,5 @@ module.exports = {
   plugins: ["react"],
   rules: {
     yoda: [2, "never", { onlyEquality: true }],
-    "prefer-destructuring": ["error", { object: false, array: false }],
-    "react/prop-types": 0,
   },
 };
