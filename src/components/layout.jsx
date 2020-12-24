@@ -1,8 +1,8 @@
 import React from "react";
 
-import SEO from "./SEO";
-import Header from "./navigation/Header";
-import Footer from "./Footer";
+import SEO from "./seo";
+import Bar from "./navigation/bar";
+import Footer from "./footer";
 
 function Layout(props) {
   return (
@@ -14,7 +14,7 @@ function Layout(props) {
       <div
         style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
-        <Header />
+        <Bar />
         <main style={{ flex: 1 }}>{props.children}</main>
         <Footer />
       </div>

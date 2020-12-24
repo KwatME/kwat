@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
 
-import styleUnit from "../functions/styleUnit";
+import styleUnit from "../functions/styleunit";
 
 function PostCard(edge) {
   const node = edge.node;

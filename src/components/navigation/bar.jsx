@@ -1,10 +1,10 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
-import SocialIcons from "./SocialIcons";
-import Menus from "./Menus";
+import SocialIcons from "./socialicons";
+import Menus from "./menus";
 
-function Header() {
+function Bar() {
   const [isActive, setIsActive] = React.useState(false);
 
   const data = useStaticQuery(graphql`
@@ -51,4 +51,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Bar;

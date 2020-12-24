@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 function Index() {
   const data = useStaticQuery(graphql`
@@ -24,7 +24,7 @@ function Index() {
           <div className="hero-body">
             <div className="container">
               <div className="content has-text-centered">
-                <h1 className="title has-text-primary-light">Are you ready?</h1>
+                <h1 className="title has-text-white">Are you ready?</h1>
               </div>
             </div>
           </div>

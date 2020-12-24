@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import Layout from "../components/Layout";
-import PostCard from "../components/PostCard";
+import Layout from "../components/layout";
+import PostCard from "../components/postcard";
 
 function Posts() {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { fields: { slug: { ne: "about" } } }) {
         edges {
           node {
             fields {

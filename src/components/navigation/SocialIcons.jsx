@@ -1,6 +1,6 @@
 import React from "react";
 
-import SocialIcon from "./SocialIcon";
+import SocialIcon from "./socialicon";
 
 function SocialIcons() {
   return (

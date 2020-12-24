@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 function About() {
   const data = useStaticQuery(graphql`

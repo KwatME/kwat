@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 
-import Layout from "./Layout";
-import styleUnit from "../functions/styleUnit";
+import Layout from "../components/layout";
+import styleUnit from "../functions/styleunit";
 
 export const result = graphql`
   query($slug: String!) {
