@@ -1,14 +1,14 @@
 import React from "react";
 
-function SocialIcon(props) {
+function SocialIcon({ url, children }) {
   return (
     <a
       className="navbar-item is-hidden-touch"
-      href={props.url}
+      href={url}
       target="_blank"
       rel="noreferrer"
     >
-      {props.children}
+      {children}
     </a>
   );
 }

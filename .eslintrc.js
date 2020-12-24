@@ -14,5 +14,6 @@ module.exports = {
   plugins: ["react"],
   rules: {
     yoda: [2, "never", { onlyEquality: true }],
+    "react/prop-types": 0,
   },
 };
