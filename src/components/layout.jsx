@@ -1,7 +1,7 @@
 import React from "react";
 
 import SEO from "./seo";
-import Bar from "./navigation/bar";
+import NavigationBar from "./navigationbar";
 import Footer from "./footer";
 
 function Layout(props) {
@@ -14,7 +14,7 @@ function Layout(props) {
       <div
         style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
-        <Bar />
+        <NavigationBar />
         <main style={{ flex: 1 }}>{props.children}</main>
         <Footer />
       </div>

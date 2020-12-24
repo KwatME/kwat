@@ -1,13 +1,13 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
-function Four04() {
+function About() {
   const data = useStaticQuery(graphql`
     query {
-      file: file(relativePath: { eq: "images/404.jpg" }) {
+      file: file(relativePath: { eq: "pages/about/about.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -27,7 +27,7 @@ function Four04() {
   `);
 
   return (
-    <Layout pageTitle="404">
+    <Layout pageTitle="About">
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">
@@ -37,21 +37,32 @@ function Four04() {
                   className="title has-text-white has-background-primary"
                   style={{ display: "table", padding: "0px 4px" }}
                 >
-                  Page Not Found
+                  {data.site.siteMetadata.author}
                 </h1>
                 <h3
                   className="subtitle has-text-white has-background-primary"
                   style={{ display: "table", padding: "0px 4px" }}
                 >
-                  <Link to="/">Let&#39;s go home</Link>
+                  {data.site.siteMetadata.authorStatus}
                 </h3>
               </div>
             </div>
           </div>
         </section>
       </BackgroundImage>
+      <section className="section">
+        <div className="container">
+          <div className="content">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
 
-export default Four04;
+export default About;

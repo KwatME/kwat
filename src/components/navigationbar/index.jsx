@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import SocialIcons from "./socialicons";
 import Menus from "./menus";
 
-function Bar() {
+function NavigationBar() {
   const [isActive, setIsActive] = React.useState(false);
 
   const data = useStaticQuery(graphql`
@@ -51,4 +51,4 @@ function Bar() {
   );
 }
 
-export default Bar;
+export default NavigationBar;

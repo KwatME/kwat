@@ -1,13 +1,12 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import Layout from "../components/layout";
-import PostCard from "../components/postcard";
+import Posts from "../../components/posts";
 
-function Posts() {
+function PostsTopic({ topic }) {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: { fields: { slug: { ne: "about" } } }) {
+      allMarkdownRemark(filter: { frontmatter: { topics: { in: topic } } }) {
         edges {
           node {
             fields {
@@ -37,11 +36,8 @@ function Posts() {
   `);
 
   return (
-    <Layout pageTitle="Posts">
-      These are the recent posts.
-      {data.allMarkdownRemark.edges.map(PostCard)}
-    </Layout>
+    <Posts pageTitle={`Topic: ${topic}`} edges={data.allMarkdownRemark.edges} />
   );
 }
 
-export default Posts;
+export default PostsTopic;
