@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 function Index() {
   const data = useStaticQuery(graphql`
     query {
-      file: file(relativePath: { eq: "images/index.jpg" }) {
+      file: file(relativePath: { eq: "pages/index.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp

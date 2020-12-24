@@ -2,8 +2,8 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
-import Layout from "../../components/layout";
-import styleUnit from "../../helpers/styleunit";
+import Layout from "../components/layout";
+import styleUnit from "../helpers/styleunit";
 
 export const result = graphql`
   query($slug: String!) {
@@ -29,8 +29,8 @@ export const result = graphql`
   }
 `;
 
-function Post(props) {
-  const node = props.data.markdownRemark;
+function Post({ data }) {
+  const node = data.markdownRemark;
   const pageTitle = node.frontmatter.title;
 
   return (
