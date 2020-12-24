@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO(props) {
+function SEO({ pageTitle, pageDescription }) {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -16,7 +16,6 @@ function SEO(props) {
   `);
 
   let title = "";
-  const pageTitle = props.pageTitle;
   const siteTitle = data.site.siteMetadata.title;
   if (pageTitle === undefined) {
     title = siteTitle;
@@ -25,7 +24,6 @@ function SEO(props) {
   }
 
   let description = "";
-  const pageDescription = props.pageDescription;
   if (pageDescription === undefined) {
     description = data.site.siteMetadata.description;
   } else {

@@ -4,18 +4,15 @@ import SEO from "./seo";
 import NavigationBar from "./navigationbar";
 import Footer from "./footer";
 
-function Layout(props) {
+function Layout({ pageTitle, pageDescription, children }) {
   return (
     <>
-      <SEO
-        pageTitle={props.pageTitle}
-        pageDescription={props.pageDescription}
-      />
+      <SEO pageTitle={pageTitle} pageDescription={pageDescription} />
       <div
         style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
         <NavigationBar />
-        <main style={{ flex: 1 }}>{props.children}</main>
+        <main style={{ flex: 1 }}>{children}</main>
         <Footer />
       </div>
     </>

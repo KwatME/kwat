@@ -15,5 +15,6 @@ module.exports = {
   rules: {
     yoda: [2, "never", { onlyEquality: true }],
     "react/prop-types": 0,
+    "react/jsx-one-expression-per-line": "off",
   },
 };
