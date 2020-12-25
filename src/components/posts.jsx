@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "./layout";
 import PostCardHalfColumn from "./postcard/postcardhalfcolumn";
 
-function Posts({ pageTitle, edges }) {
+function Posts({ pageTitle, nodes }) {
   return (
     <Layout pageTitle={pageTitle}>
       <div className="container">
@@ -13,7 +13,7 @@ function Posts({ pageTitle, edges }) {
         </div>
         <div className="section">
           <div className="columns is-multiline">
-            {edges.map(PostCardHalfColumn)}
+            {nodes.map(PostCardHalfColumn)}
           </div>
         </div>
       </div>

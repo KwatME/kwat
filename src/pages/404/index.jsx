@@ -6,7 +6,7 @@ import Layout from "../../components/layout";
 
 function Four04() {
   const data = useStaticQuery(graphql`
-    query {
+    {
       file: file(absolutePath: { regex: "/pages/404/404.jpg/" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -28,7 +28,7 @@ function Four04() {
                   className="title has-text-white has-background-primary"
                   style={{ display: "table", padding: "0px 4px" }}
                 >
-                  Page Not Found. Let&#39s go <Link to="/">home</Link>.
+                  Page Not Found. Let's go <Link to="/">home</Link>.
                 </h1>
               </div>
             </div>

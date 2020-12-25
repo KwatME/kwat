@@ -11,7 +11,6 @@ export const result = graphql`
       frontmatter {
         title
         date
-        topics
         image {
           childImageSharp {
             fluid(quality: 100) {
@@ -19,6 +18,7 @@ export const result = graphql`
             }
           }
         }
+        topics
       }
       wordCount {
         words

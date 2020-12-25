@@ -4,31 +4,31 @@ import { graphql } from "gatsby";
 import Posts from "../components/posts";
 
 export const result = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date
-            topics
-            image {
-              childImageSharp {
-                fluid(quality: 100) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+  query($topicRegex: String!) {
+    allMarkdownRemark(
+      filter: { frontmatter: { topics: { regex: $topicRegex } } }
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          image {
+            childImageSharp {
+              fluid(quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
-          wordCount {
-            words
-          }
-          timeToRead
-          excerpt
+          topics
         }
+        wordCount {
+          words
+        }
+        timeToRead
+        excerpt
       }
     }
   }
@@ -36,7 +36,7 @@ export const result = graphql`
 
 function PostsTopic({ topic, data }) {
   return (
-    <Posts pageTitle={`Topic: ${topic}`} edges={data.allMarkdownRemark.edges} />
+    <Posts pageTitle={`Topic: ${topic}`} nodes={data.allMarkdownRemark.nodes} />
   );
 }
 

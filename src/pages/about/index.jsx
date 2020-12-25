@@ -6,7 +6,7 @@ import Layout from "../../components/layout";
 
 function About() {
   const data = useStaticQuery(graphql`
-    query {
+    {
       file: file(absolutePath: { regex: "/pages/about/about.jpg/" }) {
         childImageSharp {
           fluid(quality: 100) {

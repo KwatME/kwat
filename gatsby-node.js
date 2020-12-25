@@ -3,7 +3,10 @@ const path = require("path");
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === "MarkdownRemark") {
+  if (
+    node.internal.type === "MarkdownRemark" &&
+    /(?<!\/pages\/about\/about).md/.test(node.fileAbsolutePath)
+  ) {
     createNodeField({
       node,
       name: "slug",
@@ -16,25 +19,25 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const result = await graphql(`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              slug
-            }
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(?<!/pages/about/about).md/" } }
+      ) {
+        nodes {
+          fields {
+            slug
           }
         }
       }
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach((edge) => {
+  result.data.allMarkdownRemark.nodes.forEach((node) => {
     createPage({
-      path: `posts/${edge.node.fields.slug}`,
+      path: `posts/${node.fields.slug}`,
       component: path.resolve("src/templates/post.jsx"),
       context: {
-        slug: edge.node.fields.slug,
+        slug: node.fields.slug,
       },
     });
   });

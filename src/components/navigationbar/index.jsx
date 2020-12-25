@@ -8,7 +8,7 @@ function NavigationBar() {
   const [isActive, setIsActive] = React.useState(false);
 
   const data = useStaticQuery(graphql`
-    query {
+    {
       site {
         siteMetadata {
           title

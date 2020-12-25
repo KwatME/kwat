@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 function Footer() {
   const data = useStaticQuery(graphql`
-    query {
+    {
       site {
         siteMetadata {
           author
