@@ -28,7 +28,7 @@ function Four04() {
                   className="title has-text-white has-background-primary"
                   style={{ display: "table", padding: "0px 4px" }}
                 >
-                  Page Not Found. Let's go <Link to="/">home</Link>.
+                  Page Not Found. Let's <Link to="/">go home</Link>.
                 </h1>
               </div>
             </div>

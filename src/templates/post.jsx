@@ -55,7 +55,7 @@ function Post({ data }) {
             <div className="column">
               <div className="is-pulled-right">
                 {node.frontmatter.topics
-                  .map((topic) => <Link to="/">{topic}</Link>)
+                  .map((topic) => <Link to={`/topics/${topic}`}>{topic}</Link>)
                   .reduce((pre, cur) => [pre, ", ", cur])}
               </div>
             </div>
