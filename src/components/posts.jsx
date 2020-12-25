@@ -9,7 +9,7 @@ function Posts({ pageTitle, edges }) {
       <div className="container">
         <div className="section">
           <p className="title is-1">{pageTitle}</p>
-          <p>Let me know what you think about these posts.</p>
+          <p>Opinions are my own.</p>
         </div>
         <div className="section">
           <div className="columns is-multiline">

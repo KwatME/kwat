@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
 import Layout from "../../components/layout";
@@ -7,7 +7,7 @@ import Layout from "../../components/layout";
 function About() {
   const data = useStaticQuery(graphql`
     query {
-      file: file(relativePath: { eq: "pages/about/about.jpg" }) {
+      file: file(absolutePath: { regex: "/pages/about/about.jpg/" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -20,7 +20,7 @@ function About() {
           authorStatus
         }
       }
-      markdownRemark(fields: { slug: { eq: "about" } }) {
+      markdownRemark(fileAbsolutePath: { regex: "/pages/about/about.md/" }) {
         html
       }
     }
