@@ -4,9 +4,9 @@ import { graphql } from "gatsby";
 import Posts from "../components/posts";
 
 export const result = graphql`
-  query($topicRegex: String!) {
+  query($topicRegexString: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { topics: { regex: $topicRegex } } }
+      filter: { frontmatter: { topics: { regex: $topicRegexString } } }
     ) {
       nodes {
         fields {
@@ -34,9 +34,17 @@ export const result = graphql`
   }
 `;
 
-function PostsTopic({ topic, data }) {
+function PostsTopic({ pageContext, data }) {
+  const { topicRegexString } = pageContext;
+
   return (
-    <Posts pageTitle={`Topic: ${topic}`} nodes={data.allMarkdownRemark.nodes} />
+    <Posts
+      pageTitle={`Topic: ${topicRegexString.substring(
+        1,
+        topicRegexString.length - 1
+      )}`}
+      nodes={data.allMarkdownRemark.nodes}
+    />
   );
 }
 
