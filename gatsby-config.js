@@ -43,4 +43,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: "/gatsby-gh-pages-tutorial"
 };

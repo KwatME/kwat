@@ -14,7 +14,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     yoda: [2, "never", { onlyEquality: true }],
-    "react/prop-types": 0,
+    "react/prop-types": "off",
     "react/jsx-one-expression-per-line": "off",
   },
 };
