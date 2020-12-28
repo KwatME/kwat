@@ -28,6 +28,6 @@
   },
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,html}\"",
-    "build": "rm -rf docs && gatsby build --prefix-paths && cp -r public docs"
+    "build": "rm -rf docs && gatsby build && cp -r public docs && echo \"kwatme.com\" > docs/CNAME"
   }
 }
