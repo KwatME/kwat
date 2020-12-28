@@ -34,7 +34,7 @@ export const result = graphql`
   }
 `;
 
-function PostsTopic({ pageContext, data }) {
+export default function PostsTopic({ pageContext, data }) {
   const { topicRegexString } = pageContext;
 
   return (
@@ -47,5 +47,3 @@ function PostsTopic({ pageContext, data }) {
     />
   );
 }
-
-export default PostsTopic;

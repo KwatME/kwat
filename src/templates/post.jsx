@@ -29,7 +29,7 @@ export const result = graphql`
   }
 `;
 
-function Post({ data }) {
+export default function Post({ data }) {
   const node = data.markdownRemark;
   const pageTitle = node.frontmatter.title;
 
@@ -39,7 +39,6 @@ function Post({ data }) {
         <div className="container" style={{ maxWidth: 800 }}>
           <p className="title">{pageTitle}</p>
           <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
-
           <div className="columns is-vcentered mt-2">
             <div className="column">
               <div className="subtitle heading is-6">
@@ -60,7 +59,6 @@ function Post({ data }) {
               </div>
             </div>
           </div>
-
           <div
             className="content"
             dangerouslySetInnerHTML={{
@@ -72,5 +70,3 @@ function Post({ data }) {
     </Layout>
   );
 }
-
-export default Post;

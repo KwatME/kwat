@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image";
 
 import Layout from "../../components/layout";
 
-function Four04() {
+export default function Four04() {
   const data = useStaticQuery(graphql`
     {
       file: file(absolutePath: { regex: "/pages/404/404.jpg/" }) {
@@ -38,5 +38,3 @@ function Four04() {
     </Layout>
   );
 }
-
-export default Four04;

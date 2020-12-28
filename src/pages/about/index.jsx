@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image";
 
 import Layout from "../../components/layout";
 
-function About() {
+export default function About() {
   const data = useStaticQuery(graphql`
     {
       file: file(absolutePath: { regex: "/pages/about/about.jpg/" }) {
@@ -64,5 +64,3 @@ function About() {
     </Layout>
   );
 }
-
-export default About;

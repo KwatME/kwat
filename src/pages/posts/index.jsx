@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Posts from "../../components/posts";
 
-function PostsAll() {
+export default function PostsAll() {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
@@ -37,5 +37,3 @@ function PostsAll() {
 
   return <Posts pageTitle="Posts" nodes={data.allMarkdownRemark.nodes} />;
 }
-
-export default PostsAll;

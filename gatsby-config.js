@@ -3,7 +3,8 @@ module.exports = {
     title: "Kwat",
     description: "Website of Kwat Medetgul-Ernar",
     author: "Kwat Medetgul-Ernar",
-    authorStatus: "Binge watching One Piece, the greatest anime of all time",
+    authorStatus:
+      "December, 2020: Binge watching One Piece, the greatest anime of all time",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -43,5 +44,4 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/gatsby-gh-pages-tutorial"
 };
