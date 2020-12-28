@@ -27,6 +27,7 @@
     "prettier": "2.1.2"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,html}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,html}\"",
+    "build": "rm -rf docs && gatsby build --prefix-paths && cp -r public docs"
   }
 }
