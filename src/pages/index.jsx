@@ -24,7 +24,7 @@ function Index() {
           <div className="hero-body">
             <div className="container">
               <div className="content has-text-centered">
-                <h1 className="title has-text-white">Are you ready?</h1>
+                <h1 className="title has-text-white">Keep going.</h1>
               </div>
             </div>
           </div>
