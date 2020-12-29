@@ -20,7 +20,7 @@ function Index() {
   return (
     <Layout>
       <BackgroundImage fluid={data.file.childImageSharp.fluid}>
-        <section className="hero is-large">
+        <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">
             <div className="container">
               <div className="content has-text-centered">

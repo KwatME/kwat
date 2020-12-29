@@ -5,13 +5,17 @@ image: "./image.jpeg"
 topics: ["How To", "Coding", "Web Development", "Gatsby"]
 ---
 
-## Step 1:
+## Step 1: Make Google Analytics account
 
 ![1](1.png)
+
+## Step 2: Make Google Analytics property
 
 ![2](2.png)
 
 ![3](3.png)
+
+You don't have to select these:
 
 ![4](4.png)
 
