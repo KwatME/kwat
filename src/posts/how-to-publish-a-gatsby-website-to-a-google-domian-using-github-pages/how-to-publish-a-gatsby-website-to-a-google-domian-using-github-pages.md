@@ -72,7 +72,6 @@ Git pull this commit.
 The domain hosted by Google Domains is listening to GitHub.
 GitHub Pages loads the website from docs/ and forwards it to the domian, which is specified in both GitHub Pages setting and docs/CNAME.
 
-
 ## Step 3 Build Gatsby website
 
 GitHub Pages wants docs/, but Gatsby builds public/.
