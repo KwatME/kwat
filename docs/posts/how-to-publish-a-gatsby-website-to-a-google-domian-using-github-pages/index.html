@@ -13,8 +13,13 @@
 /static/a9f138f8ee601b1d802495372cab8a03/2f1b1/image.jpg 800w,
 /static/a9f138f8ee601b1d802495372cab8a03/0ff54/image.jpg 1200w,
 /static/a9f138f8ee601b1d802495372cab8a03/06655/image.jpg 1600w,
-/static/a9f138f8ee601b1d802495372cab8a03/097fa/image.jpg 1920w" src="/static/a9f138f8ee601b1d802495372cab8a03/2f1b1/image.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class="columns is-vcentered mt-2"><div class="column"><div class="subtitle heading is-6"><p><time>2020-12-28</time></p><p>209 words<!-- --> |<!-- --> <!-- -->1 minute</p></div></div><div class="column"><div class="is-pulled-right"><a href="/topics/How To">How To</a>, <a href="/topics/Coding">Coding</a>, <a href="/topics/Web Development">Web Development</a></div></div></div><div class="content"><h2>Step 1: Link Google Domain to GitHub</h2>
-<p>Go to Google Domain and link kwatme.com and www.kwatme.com.</p>
+/static/a9f138f8ee601b1d802495372cab8a03/097fa/image.jpg 1920w" src="/static/a9f138f8ee601b1d802495372cab8a03/2f1b1/image.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class="columns is-vcentered mt-2"><div class="column"><div class="subtitle heading is-6"><p><time>2020-12-28</time></p><p>353 words<!-- --> |<!-- --> <!-- -->2 minutes</p></div></div><div class="column"><div class="is-pulled-right"><a href="/topics/How To">How To</a>, <a href="/topics/Coding">Coding</a>, <a href="/topics/Web Development">Web Development</a></div></div></div><div class="content"><p>In this post, I'm using my own domain kwatme.com as an example.
+So make sure to replace it with your own domain when you are follwoing this post.</p>
+<p>Let's go.</p>
+<h2>Step 1: Link Google Domain to GitHub</h2>
+<p>Go to Google Domain of your domain.</p>
+<p>Click DNS.</p>
+<p>Edit Custom resource records to look like this:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -38,8 +43,13 @@
         loading="lazy"
       />
     </span></p>
-<p>Wait a few minutes and check if the linking works.</p>
-<p>Check kwatme.com.</p>
+<p>kwatme.com and www.kwatme.com are different.
+We need to link both of them to GitHub.
+Here, type A is linking kwatme.com and type CNAME is linking www.kwatme.com.</p>
+<p>Linking can take a few minutes.
+Wait a bit.</p>
+<p>Then confirm the linking with dig:</p>
+<p>kwatme.com:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 515px; "
@@ -61,7 +71,7 @@
         loading="lazy"
       />
     </span></p>
-<p>Check www.kwatme.com.</p>
+<p>www.kwatme.com:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 530px; "
@@ -84,6 +94,7 @@
       />
     </span></p>
 <h2>Step 2: Set up GitHub Page</h2>
+<p>Go to your website's GitHub repository.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -107,7 +118,7 @@
         loading="lazy"
       />
     </span></p>
-<p>Enter kwatme.com, press Save, and refresh.</p>
+<p>Click Settings.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -131,6 +142,11 @@
         loading="lazy"
       />
     </span></p>
+<p>Scroll down to the GitHub Pages section.</p>
+<p>Select master branch and docs/.</p>
+<p>Enter kwatme.com (not www.kwatme.com).</p>
+<p>Click Save and refresh the page.</p>
+<p>Your GitHub Pages settings should look like this:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -153,7 +169,7 @@
         loading="lazy"
       />
     </span></p>
-<p>This adding of the custom domain creates docs/CNAME.</p>
+<p>If you already have docs/ in your repository, GitHub creates docs/CNAME, a file with only 1 line kwatme.com, and makes a commit (if you don't have docs/, don't worry - keep reading):</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -177,7 +193,6 @@
         loading="lazy"
       />
     </span></p>
-<p>Confirm CNAME to have only 1 line, the GitHub Page custom domain.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -201,9 +216,13 @@
         loading="lazy"
       />
     </span></p>
+<p>Git pull this commit.</p>
+<h3>Set up is complete.</h3>
+<p>The domain hosted by Google Domains is listening to GitHub.
+GitHub Pages loads the website from docs/ and forwards it to the domian, which is specified in both GitHub Pages setting and docs/CNAME.</p>
 <h2>Step 3 Build Gatsby website</h2>
-<p>By default, gatsby builds into public/. But GitHub Pages needs docs/ and customizing domain needs docs/CNAME.</p>
-<p>So make a custom NPM build command that: 1) removes docs/ (if it exists); 2) builds public/; 3) copies public/ to docs/; and 4) makes docs/CNAME.</p>
+<p>GitHub Pages wants docs/, but Gatsby builds public/.
+So after we build public/, we need to: 1) copy public/ to docs/ and 2) create docs/CNAME specifying the domain. To do all these, write a script in package.json:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -226,7 +245,7 @@
         loading="lazy"
       />
     </span></p>
-<p>Run this custom command.</p>
+<p>Run this script:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 624px; "
@@ -248,7 +267,7 @@
         loading="lazy"
       />
     </span></p>
-<p>Confirm new public/, docs/, and docs/CNAME.</p>
+<p>You should see public/, docs/, and docs/CNAME containing the domain:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 649px; "
@@ -270,11 +289,13 @@
         loading="lazy"
       />
     </span></p>
-<p>Git add, commit, and push.</p>
-<p>Wait a few mintes. The website should go live at <a href="http://kwatme.com">http://kwatme.com</a>.</p>
-<h2>Step 4: Set up HTTPS</h2>
-<p>Wait a few more minutes. GitHub Pages Enforce HTTPS setting should become available.
-Check it, refresh, and confirm publishing at httpS://kwatme.com.</p>
+<p>Git add, commit, and push.
+Wait a few mintes.
+The website should go live at <a href="http://kwatme.com">http://kwatme.com</a>.</p>
+<h2>Step 4: Set up HTTP<em>S</em></h2>
+<p>Wait a few more minutes.
+GitHub Pages Enforce HTTPS setting should become available.
+Check it, refresh, and confirm publishing at <a href="https://kwatme.com">https://kwatme.com</a>.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
@@ -298,5 +319,4 @@ Check it, refresh, and confirm publishing at httpS://kwatme.com.</p>
       />
     </span></p>
 <h2>Step 5: Grow the website</h2>
-<p>The workflow for updating the website is simple: 1) edit it; 2) build it with the custom comman; and 3) push it to GitHub.</p>
-<p>Cheers.</p></div></div></section></main><footer class="footer"><div class="content"><h6 class="title has-text-centered">Kwat Medetgul-Ernar<!-- --> © <!-- -->2020</h6></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/how-to-publish-a-gatsby-website-to-a-google-domian-using-github-pages";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-d4b9477c183dc5c8fd29.js"],"app":["/app-62f334af93ec659e0a5b.js"],"component---src-pages-404-index-jsx":["/component---src-pages-404-index-jsx-9c7a4c86347fd252b71b.js"],"component---src-pages-about-index-jsx":["/component---src-pages-about-index-jsx-729203f907c8fa6c45c2.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-1ee05dfe2dae1a956542.js"],"component---src-pages-posts-index-jsx":["/component---src-pages-posts-index-jsx-4982eed2d0b00eead4ff.js"],"component---src-templates-post-jsx":["/component---src-templates-post-jsx-b9af341b5cd8f80c82ea.js"],"component---src-templates-poststopic-jsx":["/component---src-templates-poststopic-jsx-95fa35c7e64ef8e6f29e.js"]};/*]]>*/</script><script src="/polyfill-d4b9477c183dc5c8fd29.js" nomodule=""></script><script src="/component---src-templates-post-jsx-b9af341b5cd8f80c82ea.js" async=""></script><script src="/commons-85943d4a071088c05af2.js" async=""></script><script src="/app-62f334af93ec659e0a5b.js" async=""></script><script src="/framework-6c3ead24af170cdcb87c.js" async=""></script><script src="/webpack-runtime-39924b9f2ff032618f66.js" async=""></script></body></html>
+<p>Updating the website is simple: 1) edit it; 2) build it with the script; and 3) push it to GitHub.</p></div></div></section></main><footer class="footer"><div class="content"><h6 class="title has-text-centered">Kwat Medetgul-Ernar<!-- --> © <!-- -->2020</h6></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/how-to-publish-a-gatsby-website-to-a-google-domian-using-github-pages";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-d4b9477c183dc5c8fd29.js"],"app":["/app-62f334af93ec659e0a5b.js"],"component---src-pages-404-index-jsx":["/component---src-pages-404-index-jsx-9c7a4c86347fd252b71b.js"],"component---src-pages-about-index-jsx":["/component---src-pages-about-index-jsx-729203f907c8fa6c45c2.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-1ee05dfe2dae1a956542.js"],"component---src-pages-posts-index-jsx":["/component---src-pages-posts-index-jsx-4982eed2d0b00eead4ff.js"],"component---src-templates-post-jsx":["/component---src-templates-post-jsx-b9af341b5cd8f80c82ea.js"],"component---src-templates-poststopic-jsx":["/component---src-templates-poststopic-jsx-95fa35c7e64ef8e6f29e.js"]};/*]]>*/</script><script src="/polyfill-d4b9477c183dc5c8fd29.js" nomodule=""></script><script src="/component---src-templates-post-jsx-b9af341b5cd8f80c82ea.js" async=""></script><script src="/commons-85943d4a071088c05af2.js" async=""></script><script src="/app-62f334af93ec659e0a5b.js" async=""></script><script src="/framework-6c3ead24af170cdcb87c.js" async=""></script><script src="/webpack-runtime-39924b9f2ff032618f66.js" async=""></script></body></html>
