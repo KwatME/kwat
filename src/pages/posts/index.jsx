@@ -15,7 +15,7 @@ export default function PostsAll() {
           }
           frontmatter {
             title
-            date
+            time
             image {
               childImageSharp {
                 fluid(quality: 100) {

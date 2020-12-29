@@ -16,7 +16,7 @@ function PostCard({ node }) {
         <div className="card-content">
           <p className="title is-4">{node.frontmatter.title}</p>
           <div className="subtitle heading">
-            <p>{node.frontmatter.date}</p>
+            <p>{node.frontmatter.time}</p>
             <p>
               {styleUnit(node.wordCount.words, "word")} |{" "}
               {styleUnit(node.timeToRead, "minute")}

@@ -1,8 +1,8 @@
 ---
-title: "How to publish a Gatsby website to a Google Domain using GitHub Pages"
-date: "2020-12-28"
-image: "./image.jpg"
-topics: ["How To", "Coding", "Web Development"]
+title: "How To Publish A Gatsby Website To A Google Domian Using GitHub Pages"
+time: "2020-12-28"
+image: "./image.jpeg"
+topics: ["How To", "Coding", "Web Development", "Gatsby"]
 ---
 
 In this post, I'm using my own domain kwatme.com as an example.

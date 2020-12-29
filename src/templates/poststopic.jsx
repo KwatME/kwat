@@ -14,7 +14,7 @@ export const result = graphql`
         }
         frontmatter {
           title
-          date
+          time
           image {
             childImageSharp {
               fluid(quality: 100) {

@@ -10,7 +10,7 @@ export const result = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        date
+        time
         image {
           childImageSharp {
             fluid(quality: 100) {
@@ -43,7 +43,7 @@ export default function Post({ data }) {
             <div className="column">
               <div className="subtitle heading is-6">
                 <p>
-                  <time>{node.frontmatter.date}</time>
+                  <time>{node.frontmatter.time}</time>
                 </p>
                 <p>
                   {styleUnit(node.wordCount.words, "word")} |{" "}
