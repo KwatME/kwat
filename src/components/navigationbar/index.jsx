@@ -7,21 +7,11 @@ import Menus from "./menus";
 function NavigationBar() {
   const [isActive, setIsActive] = React.useState(false);
 
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
-          {data.site.siteMetadata.title}
+          ~
         </Link>
         <button
           className={`navbar-burger button is-white ${
@@ -41,10 +31,10 @@ function NavigationBar() {
       </div>
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
         <div className="navbar-start">
-          <SocialIcons />
+          <Menus />
         </div>
         <div className="navbar-end">
-          <Menus />
+          <SocialIcons />
         </div>
       </div>
     </nav>
