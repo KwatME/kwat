@@ -43,5 +43,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-0680CPDT85",
+        head: true
+      }      
+    }
   ],
 };
