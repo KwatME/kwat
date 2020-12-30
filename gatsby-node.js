@@ -18,7 +18,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const result = await graphql(`
@@ -39,12 +39,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   `);
 
-  if (result.errors) {
-    reporter.panicOnBuild("There was an error loading posts.", result.errors);
-
-    return;
-  }
-
   const {
     data: {
       allMarkdownRemark: { nodes },
@@ -53,25 +47,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const nNode = nodes.length;
 
-  if (0 < nNode) {
-    const postTemplate = path.resolve("src/templates/post.jsx");
+  const postTemplate = path.resolve("src/templates/post.jsx");
 
-    nodes.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : nodes[index - 1].id;
+  nodes.forEach((post, index) => {
+    const previousPostId = index === 0 ? null : nodes[index - 1].id;
 
-      const nextPostId = index === nNode - 1 ? null : nodes[index + 1].id;
+    const nextPostId = index === nNode - 1 ? null : nodes[index + 1].id;
 
-      createPage({
-        path: post.fields.slug,
-        component: postTemplate,
-        context: {
-          id: post.id,
-          previousPostId,
-          nextPostId,
-        },
-      });
+    createPage({
+      path: post.fields.slug,
+      component: postTemplate,
+      context: {
+        id: post.id,
+        previousPostId,
+        nextPostId,
+      },
     });
-  }
+  });
 
   const postsTopicTemplate = path.resolve("src/templates/poststopic.jsx");
 

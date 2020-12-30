@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 
 import SocialIcons from "./socialicons";
 import Menus from "./menus";
