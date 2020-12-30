@@ -1,5 +1,5 @@
 ---
-title: "How To Publish A Gatsby Website To A Google Domian Using GitHub Pages"
+title: "How to publish a Gatsby website to a Google domian using GitHub Pages"
 time: "2020-12-28"
 image: "./image.jpeg"
 topics: ["How To", "Coding", "Web Development", "Gatsby"]
