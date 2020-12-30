@@ -6,7 +6,7 @@ import styleUnit from "../../helpers/styleunit";
 
 function PostCard({ node }) {
   return (
-    <Link to={`/posts/${node.fields.slug}`}>
+    <Link to={node.fields.slug}>
       <div className="card">
         <div className="card-image">
           <BackgroundImage fluid={node.frontmatter.image.childImageSharp.fluid}>

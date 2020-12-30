@@ -51,7 +51,7 @@ export default function About() {
         </section>
       </BackgroundImage>
       <section className="section">
-        <div className="container">
+        <div className="container" style={{ maxWidth: 800 }}>
           <div className="content">
             <div
               dangerouslySetInnerHTML={{
