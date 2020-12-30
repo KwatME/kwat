@@ -13,7 +13,7 @@ function Footer() {
   `);
 
   return (
-    <footer className="footer">
+    <footer className="footer pb-6">
       <div className="content">
         <h6 className="title has-text-centered">
           {data.site.siteMetadata.author} © {new Date().getFullYear()}

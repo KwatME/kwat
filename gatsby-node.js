@@ -27,10 +27,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         filter: { fileAbsolutePath: { regex: "/(?<!/pages/about/about).md/" } }
       ) {
         nodes {
+          id
           fields {
             slug
           }
-          id
           frontmatter {
             topics
           }
@@ -65,7 +65,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: post.fields.slug,
         component: postTemplate,
         context: {
-          slug: post.fields.slug,
           id: post.id,
           previousPostId,
           nextPostId,
@@ -83,6 +82,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const {
       frontmatter: { topics },
     } = nodes[nodeIndex];
+
     let topicIndex;
     for (topicIndex = 0; topicIndex < nNode; topicIndex++) {
       topicSet.add(topics[topicIndex]);

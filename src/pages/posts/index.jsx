@@ -15,7 +15,7 @@ export default function PostsAll() {
           }
           frontmatter {
             title
-            time
+            time(formatString: "MMMM DD, YYYY")
             image {
               childImageSharp {
                 fluid(quality: 100) {
@@ -29,7 +29,7 @@ export default function PostsAll() {
             words
           }
           timeToRead
-          excerpt
+          excerpt(pruneLength: 80)
         }
       }
     }

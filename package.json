@@ -28,7 +28,7 @@
     "prettier": "2.1.2"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,html}\"",
+    "pretty": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,html}\"",
     "build": "rm -rf docs && gatsby build && cp -r public docs && echo \"kwatme.com\" > docs/CNAME"
   }
 }

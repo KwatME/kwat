@@ -6,11 +6,11 @@ import Layout from "../components/layout";
 import styleUnit from "../helpers/styleunit";
 
 export const result = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query($id: String!, $previousPostId: String, $nextPostId: String) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        time
+        time(formatString: "MMMM DD, YYYY")
         image {
           childImageSharp {
             fluid(quality: 100) {
@@ -25,6 +25,22 @@ export const result = graphql`
       }
       timeToRead
       html
+    }
+    previous: markdownRemark(id: { eq: $previousPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+    next: markdownRemark(id: { eq: $nextPostId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
     }
   }
 `;
