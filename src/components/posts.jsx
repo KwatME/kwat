@@ -7,15 +7,15 @@ function Posts({ pageTitle, nodes }) {
   return (
     <Layout pageTitle={pageTitle}>
       <div className="container">
-        <div className="section">
-          <p className="title is-1">{pageTitle}</p>
-          <p>Opinions are my own.</p>
-        </div>
-        <div className="section">
+        <section className="section">
+          <h1 className="title is-1">{pageTitle}</h1>
+          <h4 className="subtitle is-4">Opinions are my own.</h4>
+        </section>
+        <section className="section">
           <div className="columns is-multiline">
             {nodes.map(PostCardHalfColumn)}
           </div>
-        </div>
+        </section>
       </div>
     </Layout>
   );

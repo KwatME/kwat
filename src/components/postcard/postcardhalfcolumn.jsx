@@ -4,9 +4,9 @@ import PostCard from ".";
 
 function PostCardHalfColumn(node) {
   return (
-    <div className="column is-half">
+    <section className="column is-half">
       <PostCard node={node} />
-    </div>
+    </section>
   );
 }
 

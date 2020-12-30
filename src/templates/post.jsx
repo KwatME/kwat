@@ -53,11 +53,11 @@ export default function Post({ data }) {
     <Layout pageTitle={pageTitle}>
       <section className="section">
         <div className="container" style={{ maxWidth: 800 }}>
-          <p className="title">{pageTitle}</p>
+          <h1 className="title is-2">{pageTitle}</h1>
           <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
-          <div className="columns is-vcentered mt-2">
+          <div className="columns is-vcentered mt-1">
             <div className="column">
-              <div className="subtitle heading is-6">
+              <section className="heading subtitle is-6">
                 <p>
                   <time>{node.frontmatter.time}</time>
                 </p>
@@ -65,14 +65,14 @@ export default function Post({ data }) {
                   {styleUnit(node.wordCount.words, "word")} |{" "}
                   {styleUnit(node.timeToRead, "minute")}
                 </p>
-              </div>
+              </section>
             </div>
             <div className="column">
-              <div className="is-pulled-right">
+              <section className="is-pulled-right heading subtitle is-6">
                 {node.frontmatter.topics
                   .map((topic) => <Link to={`/topics/${topic}`}>{topic}</Link>)
                   .reduce((pre, cur) => [pre, ", ", cur])}
-              </div>
+              </section>
             </div>
           </div>
           <div

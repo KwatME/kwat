@@ -9,9 +9,9 @@ function NavigationBar() {
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
+      <span className="navbar-brand">
         <Link className="navbar-item" to="/">
-          ~
+          <h5 className="title is-5">~</h5>
         </Link>
         <button
           className={`navbar-burger button is-white ${
@@ -28,15 +28,15 @@ function NavigationBar() {
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </button>
-      </div>
-      <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
-        <div className="navbar-start">
+      </span>
+      <span className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+        <span className="navbar-start">
           <Menus />
-        </div>
-        <div className="navbar-end">
+        </span>
+        <span className="navbar-end">
           <SocialIcons />
-        </div>
-      </div>
+        </span>
+      </span>
     </nav>
   );
 }

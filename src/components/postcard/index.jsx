@@ -13,18 +13,18 @@ function PostCard({ node }) {
             <figure className="image is-3by2" />
           </BackgroundImage>
         </div>
-        <div className="card-content">
-          <p className="title is-4">{node.frontmatter.title}</p>
-          <div className="subtitle heading">
+        <section className="card-content">
+          <h4 className="title is-4">{node.frontmatter.title}</h4>
+          <section className="subtitle heading">
             <p>{node.frontmatter.time}</p>
             <p>
               {styleUnit(node.wordCount.words, "word")} |{" "}
               {styleUnit(node.timeToRead, "minute")}
             </p>
-          </div>
-          <div className="content">{node.excerpt}</div>
-        </div>
-        <div className="tags is-pulled-right">
+          </section>
+          <section className="content">{node.excerpt}</section>
+        </section>
+        <section className="tags is-pulled-right">
           {node.frontmatter.topics.map((topic) => (
             <Link
               className="tag is-radiusless is-primary"
@@ -33,7 +33,7 @@ function PostCard({ node }) {
               {topic}
             </Link>
           ))}
-        </div>
+        </section>
       </div>
     </Link>
   );
