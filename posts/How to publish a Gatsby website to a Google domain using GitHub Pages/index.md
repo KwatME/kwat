@@ -1,7 +1,7 @@
 ---
 title: "How to publish a Gatsby website to a Google domain using GitHub Pages"
 time: "2020-12-28"
-image: "./image.jpeg"
+image: "./coverart.jpeg"
 topics: ["How To", "Coding", "Web Development", "Gatsby"]
 ---
 
@@ -23,27 +23,27 @@ Type A links kwatme.com.
 Type CNAME links www.kwatme.com.
 
 The final setting looks like this:
-![](1.png)
+![](image/1.png)
 
 Linking takes a few minutes.
 Wait a bit.
 And confirm the linking with dig:
 
 kwatme.com:
-![](2.png)
+![](image/2.png)
 
 www.kwatme.com:
-![](3.png)
+![](image/3.png)
 
 We're done editing Google Domains.
 
 ## Step 2: Set up GitHub Page
 
 Go to the Gatsby website's GitHub repository.
-![](4.png)
+![](image/4.png)
 
 Click Settings.
-![](5.png)
+![](image/5.png)
 
 Scroll down to the GitHub Pages section.
 
@@ -54,11 +54,11 @@ Enter kwatme.com, not www.kwatme.com.
 Click Save and refresh the page.
 
 The final settings looks like this:
-![](6.png)
+![](image/6.png)
 
 If the repository already has docs/, GitHub creates docs/CNAME, a file with only 1 line kwatme.com, and makes a commit:
-![](7.png)
-![](8.png)
+![](image/7.png)
+![](image/8.png)
 
 Git pull this commit.
 
@@ -76,13 +76,13 @@ We just need to update the repository.
 GitHub Pages wants docs/, but Gatsby builds public/.
 So, after we build public/, we must: 1) copy public/ to docs/ and 2) create docs/CNAME specifying the domain.
 To do all this, write a script in package.json:
-![](9.png)
+![](image/9.png)
 
 From the root of the repository, run this script:
-![](10.png)
+![](image/10.png)
 
 The script outputs public/, docs/, and docs/CNAME.
-![](11.png)
+![](image/11.png)
 
 Git add, commit, and push.
 Wait a few mintes.
@@ -94,8 +94,12 @@ Wait a few more minutes.
 GitHub Pages Enforce HTTPS setting becomes available.
 Check it, refresh, and confirm publishing at https://kwatme.com.
 
-![](12.png)
+![](image/12.png)
 
 ## Step 5: Grow the website
 
 Updating the website is simple: 1) edit it; 2) build it with the script; and 3) push it to GitHub.
+
+# Next
+
+[Track your growth by setting up Google analytics](../How to set up Google Analytics on a Gatsby website)

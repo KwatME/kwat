@@ -1,7 +1,7 @@
 ---
 title: "How to set up minimal yet powerful macOS"
 time: "2021-01-09T00:54:25.27"
-image: "./image.jpeg"
+image: "./coverart.jpeg"
 topics: ["How to", "Coding", "Environment"]
 ---
 
@@ -41,4 +41,4 @@ brew cask
 defaults write -globalDomain ApplePressAndHoldEnabled -bool false
 ```
 
-### Set environment
+## [Set up coding environment](../How to set up minimal yet powerful coding environment)

@@ -7,11 +7,16 @@ import Layout from "../components/layout";
 function Index() {
   const data = useStaticQuery(graphql`
     {
-      file: file(absolutePath: { regex: "/pages/index.jpg/" }) {
+      file: file(absolutePath: { regex: "/pages/index.jpeg/" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
+        }
+      }
+      site {
+        siteMetadata {
+          hello
         }
       }
     }
@@ -25,8 +30,7 @@ function Index() {
             <div className="container">
               <div className="content has-text-centered">
                 <h1 className="title has-text-white">
-                  Every adversity, carries with it, the seed of equivalent
-                  advantage.
+                  {data.site.siteMetadata.hello}
                 </h1>
               </div>
             </div>

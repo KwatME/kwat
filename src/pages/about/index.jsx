@@ -7,7 +7,7 @@ import Layout from "../../components/layout";
 export default function About() {
   const data = useStaticQuery(graphql`
     {
-      file: file(absolutePath: { regex: "/pages/about/about.jpg/" }) {
+      file: file(absolutePath: { regex: "/pages/about/about.jpeg/" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp

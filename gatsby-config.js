@@ -2,8 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "Kwat",
     description: "Website of Kwat Medetgul-Ernar",
+    hello: "Let's go",
     author: "Kwat Medetgul-Ernar",
-    authorStatus: "January, 2021: Focussing on medicine...",
+    authorStatus:
+      "Every adversity, carries with it, the seed of equivalent advantage",
   },
   plugins: [
     {
@@ -38,7 +40,7 @@ module.exports = {
         background_color: "#9017e6",
         theme_color: "#20d9ba",
         display: "minimal-ui",
-        icon: "assets/icon.jpg",
+        icon: "assets/icon.jpeg",
       },
     },
     "gatsby-transformer-sharp",

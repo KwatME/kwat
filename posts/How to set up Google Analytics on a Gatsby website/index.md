@@ -1,7 +1,7 @@
 ---
 title: "How to set up Google Analytics on a Gatsby website"
 time: "2020-12-29T11:50:12.759"
-image: "./image.jpeg"
+image: "./coverart.jpeg"
 topics: ["How To", "Coding", "Web Development", "Gatsby"]
 ---
 
@@ -15,7 +15,7 @@ Enter account name.
 
 The final Account setup page looks like this.
 
-![](1.png)
+![](image/1.png)
 
 Click Next.
 
@@ -24,7 +24,7 @@ Click Next.
 Enter Property name.
 (I just use the domain for this.)
 
-![](2.png)
+![](image/2.png)
 
 Click Show advanced options.
 Few new settings show up.
@@ -42,40 +42,40 @@ Keep the check for Enable enhanced measurement for Google Analytics 4 property.
 
 The final advanced options section looks like this.
 
-![](3.png)
+![](image/3.png)
 
 Click Next.
 
 Answer some questions. (I skip these.)
 
-![](4.png)
+![](image/4.png)
 
 Click Create.
 
 The final page looks like this.
 
-![](5.png)
+![](image/5.png)
 
 (I think what's happening is that Google Analytics has connected the Web tracking ID and the universal tracking ID.
 So when we use the universal tracking ID for the Gastby website, we end up using the Web tracking system.)
 
 Click Connected Site Tags to see the connected universal tracking ID.
 
-![](6.png)
+![](image/6.png)
 
 ## Step 3: Copy the universal tracking ID
 
 Click Admin.
 
-![](8.png)
+![](image/8.png)
 
 Select the property with UA.
 
-![](9.png)
+![](image/9.png)
 
 There is the univeral tracking ID.
 
-![](10.png)
+![](image/10.png)
 
 Copy the ID.
 
@@ -92,18 +92,18 @@ Enter the universal tracking ID.
 
 The final gatsby-config.js looks like this.
 
-![](11.png)
+![](image/11.png)
 
 ## Step 4: Test
 
 The tracking is off when in development mode.
 So build and serve the website to turn the tracking on.
 
-![](12.png)
+![](image/12.png)
 
-![](13.png)
+![](image/13.png)
 
 Go to the served local host website to be tracked.
 Finally, see the live tracking status in the Google Analytics page.
 
-![](14.png)
+![](image/14.png)

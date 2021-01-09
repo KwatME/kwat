@@ -1,7 +1,7 @@
 ---
 title: "How to set up minimal yet powerful Ubuntu"
 time: "2021-01-09T00:56:15.215"
-image: "./image.jpeg"
+image: "./coverart.jpeg"
 topics: ["How to", "Coding", "Environment"]
 ---
 
@@ -59,4 +59,4 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash button.lid_init_state=open"
 sudo update-grub
 ```
 
-### Set environment
+## [Set up coding environment](../How to set up minimal yet powerful coding environment)

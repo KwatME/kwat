@@ -7,7 +7,7 @@ import Layout from "../../components/layout";
 export default function Four04() {
   const data = useStaticQuery(graphql`
     {
-      file: file(absolutePath: { regex: "/pages/404/404.jpg/" }) {
+      file: file(absolutePath: { regex: "/pages/404/404.jpeg/" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
