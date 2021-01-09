@@ -1,6 +1,6 @@
 Website of Kwat Medetgul-Ernar.
 
-## TODO
+## To do
 
 `style={{maxWidth: 800}}`
 
@@ -21,3 +21,7 @@ https://bulma.io
 https://www.gatsbyjs.com/docs/creating-and-modifying-pages/
 
 https://www.samdawson.dev/article/gatsby-categories
+
+Use new google analytics: https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-analytics/#using-gatsby-plugin-google-gtag
+
+Sort posts by time

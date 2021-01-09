@@ -1,19 +1,21 @@
 const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
 
   if (
     node.internal.type === "MarkdownRemark" &&
-    /(?<!\/pages\/about\/about).md/.test(node.fileAbsolutePath)
+    /(?<=\/posts\/.+\/index).md/.test(node.fileAbsolutePath)
   ) {
-    const value = createFilePath({ node, getNode });
-
     createNodeField({
       node,
       name: "slug",
-      value,
+      value: path.join(
+        "/",
+        "posts",
+        path.basename(path.dirname(node.fileAbsolutePath)),
+        "/"
+      ),
     });
   }
 };
@@ -24,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(?<!/pages/about/about).md/" } }
+        filter: { fileAbsolutePath: { regex: "/(?<=/posts/.+/index).md/" } }
       ) {
         nodes {
           id
@@ -75,15 +77,17 @@ exports.createPages = async ({ graphql, actions }) => {
       frontmatter: { topics },
     } = nodes[nodeIndex];
 
+    const nTopic = topics.length;
+
     let topicIndex;
-    for (topicIndex = 0; topicIndex < nNode; topicIndex++) {
+    for (topicIndex = 0; topicIndex < nTopic; topicIndex++) {
       topicSet.add(topics[topicIndex]);
     }
   }
 
   topicSet.forEach((topic) => {
     createPage({
-      path: `topics/${topic}`,
+      path: `/topics/${topic}`,
       component: postsTopicTemplate,
       context: {
         topicRegexString: `/${topic}/`,

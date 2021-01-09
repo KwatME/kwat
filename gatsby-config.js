@@ -3,8 +3,7 @@ module.exports = {
     title: "Kwat",
     description: "Website of Kwat Medetgul-Ernar",
     author: "Kwat Medetgul-Ernar",
-    authorStatus:
-      "December, 2020: Binge watching One Piece, the greatest anime of all time",
+    authorStatus: "January, 2021: Focussing on medicine...",
   },
   plugins: [
     {

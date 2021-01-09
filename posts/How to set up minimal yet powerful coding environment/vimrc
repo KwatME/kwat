@@ -1,0 +1,177 @@
+" ================================================================================
+" Appearance
+" ================================================================================
+" set background=dark
+
+" set title
+
+set guifont=Menlo-Regular:h13
+
+set lines=56
+
+set columns=112
+
+set number
+
+set laststatus=2
+
+set ruler
+
+" ================================================================================
+" Language
+" ================================================================================
+" set encoding=utf-8
+
+syntax enable
+
+" ================================================================================
+" Line
+" ================================================================================
+" set wrap
+
+set linebreak
+
+" set display+=lastline
+
+set scrolloff=8
+
+set sidescrolloff=8
+
+set nofoldenable
+
+" ================================================================================
+" Indent
+" ================================================================================
+set tabstop=4
+
+set softtabstop=4
+
+set shiftwidth=4
+
+set expandtab
+
+" set autoindent
+
+" filetype plugin indent on 
+
+" set backspace=indent,eol,start
+
+" ================================================================================
+" Search
+" ================================================================================
+set incsearch
+
+set hlsearch
+
+set ignorecase
+
+set smartcase
+
+" Use \ to clear search highlight
+nnoremap <leader> :nohlsearch<CR>
+
+" ================================================================================
+" Highlight
+" ================================================================================
+set showmatch
+
+set mps+=<:>
+
+" ================================================================================
+" Error
+" ================================================================================
+set noerrorbells
+
+set visualbell
+
+" ================================================================================
+" Interface
+" ================================================================================
+set lazyredraw
+
+set wildmenu
+
+" set mouse=a
+
+" ================================================================================
+" Input and output
+" ================================================================================
+" set autoread
+
+" set history=1000
+"
+" Establish ~/.cache/vim
+if empty(glob('~/.cache/vim'))
+  silent !mkdir -p ~/.cache/vim
+endif
+
+set dir=~/.cache/vim
+
+set backupdir=~/.cache/vim
+
+set confirm
+
+" ================================================================================
+" Plug
+" ================================================================================
+" Install plug, which is a plugin manager for vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" List plugins
+call plug#begin()
+
+" onedark, colorscheme
+Plug 'joshdick/onedark.vim'
+
+" nerdtree, which enables file tree
+Plug 'preservim/nerdtree'
+
+" nerdtree's git plugin, which shows git status
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" polyglot, which highlights syntax for various languages
+Plug 'sheerun/vim-polyglot'
+
+" coc, which auto-completes code
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" After installing coc, set up coc language servers by:
+" :CocInstall coc-sh coc-html coc-json coc-julia coc-pyright 
+
+" ale, which shows linting
+Plug 'dense-analysis/ale'
+" Make sure to have language specific linters
+
+" TODO
+Plug 'JuliaEditorSupport/julia-vim'
+
+" End of list
+call plug#end()
+
+" ================================================================================
+" OneDark
+" ================================================================================
+colorscheme onedark
+
+" ================================================================================
+" NerdTree
+" ================================================================================
+" Use ctrl-t to toggle
+map <C-t> :NERDTreeToggle<CR>
+
+" ================================================================================
+" CoC
+" ================================================================================
+" Use tab to navigate suggestions down and complete
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : coc#refresh()
+
+" Use shift-tab to navigate suggestions up and complete
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction

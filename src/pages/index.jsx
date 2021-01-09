@@ -24,7 +24,10 @@ function Index() {
           <div className="hero-body">
             <div className="container">
               <div className="content has-text-centered">
-                <h1 className="title has-text-white">昨日の自分を超える</h1>
+                <h1 className="title has-text-white">
+                  Every adversity, carries with it, the seed of equivalent
+                  advantage.
+                </h1>
               </div>
             </div>
           </div>
