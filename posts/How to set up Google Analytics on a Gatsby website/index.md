@@ -1,7 +1,7 @@
 ---
-title: "How to set up Google Analytics on a Gatsby website"
-time: "2020-12-29T11:50:12.759"
-image: "./coverart.jpeg"
+title: How to set up Google Analytics on a Gatsby website
+time: 2020-12-29T11:50:12.759
+image: coverart.jpeg
 topics: ["How To", "Coding", "Web Development", "Gatsby"]
 ---
 
