@@ -1,7 +1,7 @@
 ---
 title: How to set up minimal yet powerful coding environment
 time: 2021-01-09T00:23:12.972
-image: coverart.jpeg
+cover: cover.jpeg
 topics: ["How to", "Coding", "Environment"]
 ---
 

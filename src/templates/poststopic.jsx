@@ -15,7 +15,7 @@ export const result = graphql`
         frontmatter {
           title
           time
-          image {
+          cover {
             childImageSharp {
               fluid(quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp

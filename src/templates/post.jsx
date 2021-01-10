@@ -11,7 +11,7 @@ export const result = graphql`
       frontmatter {
         title
         time(formatString: "MMMM DD, YYYY")
-        image {
+        cover {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
@@ -54,7 +54,7 @@ export default function Post({ data }) {
       <section className="section">
         <div className="container" style={{ maxWidth: 800 }}>
           <h1 className="title is-2">{pageTitle}</h1>
-          <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
+          <Img fluid={node.frontmatter.cover.childImageSharp.fluid} />
           <div className="columns is-vcentered mt-1">
             <div className="column">
               <section className="heading subtitle is-6">

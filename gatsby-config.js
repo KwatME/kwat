@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "Kwat",
     description: "Website of Kwat Medetgul-Ernar",
-    hello: "Let's go",
+    hello: "Let's go.",
     author: "Kwat Medetgul-Ernar",
     authorStatus:
-      "Every adversity, carries with it, the seed of equivalent advantage",
+      "Every adversity, carries with it, the seed of equivalent advantage.",
   },
   plugins: [
     {

@@ -1,7 +1,7 @@
 ---
 title: How to set up minimal yet powerful macOS
 time: 2021-01-09T00:54:25.27
-image: coverart.jpeg
+cover: cover.jpeg
 topics: ["How to", "Coding", "Environment"]
 ---
 

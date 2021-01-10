@@ -1,7 +1,7 @@
 ---
 title: How to set up minimal yet powerful Ubuntu
 time: 2021-01-09T00:56:15.215
-image: coverart.jpeg
+cover: cover.jpeg
 topics: ["How to", "Coding", "Environment"]
 ---
 

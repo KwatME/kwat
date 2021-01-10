@@ -1,7 +1,7 @@
 ---
 title: How to publish a Gatsby website to a Google domain using GitHub Pages
 time: 2020-12-28
-image: coverart.jpeg
+cover: cover.jpeg
 topics: ["How To", "Coding", "Web Development", "Gatsby"]
 ---
 

@@ -9,7 +9,7 @@ function PostCard({ node }) {
     <Link to={node.fields.slug}>
       <div className="card">
         <div className="card-image">
-          <BackgroundImage fluid={node.frontmatter.image.childImageSharp.fluid}>
+          <BackgroundImage fluid={node.frontmatter.cover.childImageSharp.fluid}>
             <figure className="image is-3by2" />
           </BackgroundImage>
         </div>

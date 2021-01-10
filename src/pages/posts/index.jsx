@@ -16,7 +16,7 @@ export default function PostsAll() {
           frontmatter {
             title
             time(formatString: "MMMM DD, YYYY")
-            image {
+            cover {
               childImageSharp {
                 fluid(quality: 100) {
                   ...GatsbyImageSharpFluid_withWebp
