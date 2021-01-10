@@ -9,7 +9,13 @@ function Posts({ pageTitle, nodes }) {
       <div className="container">
         <section className="section">
           <h1 className="title is-1">{pageTitle}</h1>
-          <h4 className="subtitle is-4">Opinions are my own.</h4>
+          <h4 className="subtitle is-4">
+            The only thing constant in life is change, hopefully growth. That's
+            why I go back to the already published posts and update them. As I
+            adopt new technologies, learn about new medicine, or change my mind,
+            I go back and update the corresponding posts. I want to keep
+            everything up-to-date and awesome. Opinions are my own.
+          </h4>
         </section>
         <section className="section">
           <div className="columns is-multiline">

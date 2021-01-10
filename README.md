@@ -25,3 +25,7 @@ https://www.samdawson.dev/article/gatsby-categories
 Use new google analytics: https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-analytics/#using-gatsby-plugin-google-gtag
 
 Sort posts by time
+
+Try <Terms></Terms> in .md
+
+Try clickable elements in .md
