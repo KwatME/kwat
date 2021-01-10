@@ -139,6 +139,41 @@ function cleansh() {
 
 }
 
+function gitclone() {
+
+	for repository_name in \
+		Kraft.py \
+		CleanNB.py \
+		GCTGMT.py \
+		FeatureSetEnrichment.py \
+		BlogPost.jl \
+		CleanCode.jl \
+		HotPlot.jl \
+		Normalization.jl \
+		InformationTheory.jl \
+		GCTGMT.jl \
+		FeatureSetEnrichment.jl \
+		GeneSetControl.tsv \
+		GSEA.app \
+		GenomeExplorer.app \
+		Diagnosis.app \
+		MedicalExam.app \
+		Medulloblastoma.py \
+		ChronicFatigueSyndrome.py \
+		CancerCellLine.py \
+		Comparison.py \
+		Model.py \
+		Proxy.py \
+		kwatme.com \
+		translational-crc.org \
+		shenjpmd.com; do
+
+		git clone https://github.com/KwatME/$repository_name
+
+	done
+
+}
+
 function gitaddcommitpush() {
 
 	git add -A && git commit -m "$1" && git push
