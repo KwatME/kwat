@@ -27,6 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(?<=/posts/.+/index).md/" } }
+        sort: { fields: [frontmatter___time], order: DESC }
       ) {
         nodes {
           id
@@ -34,7 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
             slug
           }
           frontmatter {
-            topics
+            tags
           }
         }
       }
@@ -67,30 +68,30 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const postsTopicTemplate = path.resolve("src/templates/poststopic.jsx");
+  const postsTagTemplate = path.resolve("src/templates/poststag.jsx");
 
-  const topicSet = new Set();
+  const tagSet = new Set();
 
   let nodeIndex;
   for (nodeIndex = 0; nodeIndex < nNode; nodeIndex++) {
     const {
-      frontmatter: { topics },
+      frontmatter: { tags },
     } = nodes[nodeIndex];
 
-    const nTopic = topics.length;
+    const nTag = tags.length;
 
-    let topicIndex;
-    for (topicIndex = 0; topicIndex < nTopic; topicIndex++) {
-      topicSet.add(topics[topicIndex]);
+    let tagIndex;
+    for (tagIndex = 0; tagIndex < nTag; tagIndex++) {
+      tagSet.add(tags[tagIndex]);
     }
   }
 
-  topicSet.forEach((topic) => {
+  tagSet.forEach((tag) => {
     createPage({
-      path: `/topics/${topic}`,
-      component: postsTopicTemplate,
+      path: `/tags/${tag}`,
+      component: postsTagTemplate,
       context: {
-        topicRegexString: `/${topic}/`,
+        tagRegexString: `/${tag}/`,
       },
     });
   });

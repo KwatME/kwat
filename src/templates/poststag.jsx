@@ -4,9 +4,10 @@ import { graphql } from "gatsby";
 import Posts from "../components/posts";
 
 export const result = graphql`
-  query($topicRegexString: String!) {
+  query($tagRegexString: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { topics: { regex: $topicRegexString } } }
+      filter: { frontmatter: { tags: { regex: $tagRegexString } } }
+      sort: { fields: [frontmatter___time], order: DESC }
     ) {
       nodes {
         fields {
@@ -22,7 +23,7 @@ export const result = graphql`
               }
             }
           }
-          topics
+          tags
         }
         wordCount {
           words
@@ -34,14 +35,14 @@ export const result = graphql`
   }
 `;
 
-export default function PostsTopic({ pageContext, data }) {
-  const { topicRegexString } = pageContext;
+export default function PostsTag({ pageContext, data }) {
+  const { tagRegexString } = pageContext;
 
   return (
     <Posts
-      pageTitle={`Topic: ${topicRegexString.substring(
+      pageTitle={`Tag: ${tagRegexString.substring(
         1,
-        topicRegexString.length - 1
+        tagRegexString.length - 1
       )}`}
       nodes={data.allMarkdownRemark.nodes}
     />

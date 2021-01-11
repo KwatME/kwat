@@ -2,25 +2,18 @@
 title: Approach to the Patient with Neurologic Disease
 time: 2021-01-09T12:50:47.198
 cover: cover.jpeg
-topics: ["Medicine", "Neurology"]
+tags: [Medicine, Neurology]
 ---
-
-## To become a bad-ass neurologist, you must:
-
-1. Know a lot about neuroscience to able able to list a comprehensive differential diagnosis
-2. Take detailed history
-3. Identify timing and localization
-4. Be systematic
 
 ## When diagnosing a neurological disease, there are three steps:
 
 1. Identify timing
-2. Idenitfy localization
+2. Idenitfy location
 3. List a differential diagnosis
 
 Only after doing these three, consider ordering any diagnosic test.
 
-## Let's talk about the significance of timing.
+## Let's talk about timing.
 
 If the sings and symptoms are acute (going on for about a day), think of:
 
@@ -53,7 +46,7 @@ If chronic (~months or ~years), think of degenerative diseases like:
 Here is the summary of timing.
 ![](image/timing.png)
 
-## Let's talk about localization.
+## Let's talk about location.
 
 From just examining the patient, localize where the problem is or where the lesion is.
 
@@ -63,9 +56,9 @@ First, localize the lesion on the y-axis of the nervous system, which spans from
 Then, localize on the x-axis, which spans the y-axis coordinate from the superficial to the deep, containing various neural tissues.
 ![](image/localization_x_axis.png)
 
-If the localization does not explain all the signs and symptoms, then consider multifocal etiologies.
+If the location does not explain all the signs and symptoms, then consider multifocal etiologies.
 
-## Use associated signs and symptoms to localize.
+## Localize using associated signs and symptoms.
 
 CNS problem can result in:
 
@@ -110,7 +103,7 @@ Many As (aphasia, anopsia, agnosia, apraxia, amnesia, and altered mental status)
 
 Many Ds (diplopsia, dysphagia, dysequilibrium, dyscoordination, and dysconjugate gaze) are extrapyramidal signs.
 
-## Think about the entire neural pathway to localize.
+## Localize over the full neural pathway.
 
 For example, a patient with right foot drop can have a lesion in:
 
@@ -126,7 +119,7 @@ For example, a patient with right foot drop can have a lesion in:
 
 ![](image/localization_foot_problem.png)
 
-## Use affected anatomical groups to localize.
+## Localize using anatomical groups.
 
 <ol type="A">
   <li>Lesion in cerebral cortex (above the point of decussasion) affects head and ipsilateral body, because the signal from the cerebral cortex cannot cross to the other side.</li>
@@ -138,44 +131,61 @@ For example, a patient with right foot drop can have a lesion in:
 
 ![](image/localization_anatomical_group.png)
 
-## Localization examples
+## Here are some common sings and symptoms and the localization.
 
-(Sings and symptoms <-- Lesion location)
+(Sings and symptoms @ Lesion location)
 
-Weakness, spasticity, hyperreflexia, clonus, and Babinski sign <-- Upper motor neuron (corticospinal tract)
+Weakness, spasticity, hyperreflexia, clonus, and Babinski sign @ Upper motor neuron (corticospinal tract)
 
-Weakness, atrophy, fasciculation, hyporeflexia, areflexia <-- Lower motor neuron
+Weakness, atrophy, fasciculation, hyporeflexia, areflexia @ Lower motor neuron
 
-Loss of sensation, symmetric distal stocking glove paresthesia, bilateral foot weakness, hyporeflexia <-- Peripheral neuropathy (sensorimotor)
+Loss of sensation, symmetric distal stocking glove paresthesia, bilateral foot weakness, hyporeflexia @ Peripheral neuropathy (sensorimotor)
 
-All symptoms below the neck, loss of positional and vibrational sense on right, decreased pain and temperature sense on left, weakness on right <-- Spinal cord (right hemicord)
+All symptoms below the neck, loss of positional and vibrational sense on right, decreased pain and temperature sense on left, weakness on right @ Spinal cord (right hemicord)
 
-Weakness and decreased sense on right face and left body <-- Brainstem (right pons, where CN5 is)
+Weakness and decreased sense on right face and left body @ Brainstem (right pons, where CN5 is)
 
-Left cranial nerve 3 palsy and right hemiparesis <-- Brainstem (midbrain, where CN3 is)
+Left cranial nerve 3 palsy and right hemiparesis @ Brainstem (midbrain, where CN3 is)
 
-Wide based gait, unable to tandem walk, dyscoordination in limbs <-- Cerebellum
+Wide based gait, unable to tandem walk, dyscoordination in limbs @ Cerebellum
 
-Numbness in little finger and half of ring finder <-- Peripheral neuropathy (ulnar nerve)
+Numbness in little finger and half of ring finder @ Peripheral neuropathy (ulnar nerve)
 
-Pure motor weakness, atrophy and fasciculation of the hand muscle with hyperreflexia, spasticity, no sensory involvement <-- Upper motor neuron and lower motor neuron (anterior horm cells)
+Pure motor weakness, atrophy and fasciculation of the hand muscle with hyperreflexia, spasticity, no sensory involvement @ Upper motor neuron and lower motor neuron (anterior horm cells)
 
-Symmetric proximal weakness, normal reflex, no sensory deficit <-- Muscle
+Symmetric proximal weakness, normal reflex, no sensory deficit @ Muscle
 
-Aphasia, right hemiparesis <-- Left cerebral cortex
+Aphasia, right hemiparesis @ Left cerebral cortex
 
-Pure motor symptoms, fatigueble weakness with preserved reflexs <-- Neuromuscular junction
+Pure motor symptoms, fatigueble weakness with preserved reflexs @ Neuromuscular junction
 
-Bradykinesia, rigidity, rest tremor <-- Basal ganglia (extrapyramidal)
+Bradykinesia, rigidity, rest tremor @ Basal ganglia (extrapyramidal)
 
-Left face, arm, body, leg hemiparesis <-- Right cerebral cortex
+Left face, arm, body, leg hemiparesis @ Right cerebral cortex
 
-<br>
+## Let's talk about differential diagnosis.
+
+Use "I MIND THE VIP" to recall all disease categories to consider:
+
+- **I**nfectious
+- **M**etabolic or toxic
+- **I**atrogenic
+- **N**eoplastic
+- **D**egenerative
+- **T**raumatic
+- **H**ereditary
+- **E**pileptic
+- **V**ascular
+- **I**nflammatory (think of demyelinating)
+- **P**sychiatric
+
+## Only after timing, lozalizing, and differential diagnosic, order any diagnosic test.
+
 <br>
 
 ---
 
-## Terms
+<br>
 
 Areflexia : No reflex
 

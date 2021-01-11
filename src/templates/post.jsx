@@ -18,7 +18,7 @@ export const result = graphql`
             }
           }
         }
-        topics
+        tags
       }
       wordCount {
         words
@@ -69,8 +69,8 @@ export default function Post({ data }) {
             </div>
             <div className="column">
               <section className="is-pulled-right heading subtitle is-6">
-                {node.frontmatter.topics
-                  .map((topic) => <Link to={`/topics/${topic}`}>{topic}</Link>)
+                {node.frontmatter.tags
+                  .map((tag) => <Link to={`/tags/${tag}`}>{tag}</Link>)
                   .reduce((pre, cur) => [pre, ", ", cur])}
               </section>
             </div>

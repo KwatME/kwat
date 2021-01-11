@@ -25,12 +25,9 @@ function PostCard({ node }) {
           <section className="content">{node.excerpt}</section>
         </section>
         <section className="tags is-pulled-right">
-          {node.frontmatter.topics.map((topic) => (
-            <Link
-              className="tag is-radiusless is-primary"
-              to={`/topics/${topic}`}
-            >
-              {topic}
+          {node.frontmatter.tags.map((tag) => (
+            <Link className="tag is-radiusless is-primary" to={`/tags/${tag}`}>
+              {tag}
             </Link>
           ))}
         </section>

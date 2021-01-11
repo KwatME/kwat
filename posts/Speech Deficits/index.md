@@ -1,11 +1,11 @@
 ---
 cover: cover.jpeg
-topics: [Medicine, Neurology]
-time: 2021-01-10 23:32:03.504653
-title: Speed Deficits
+tags: [Medicine, Neurology]
+time: 2021-01-11 09:10:50.999617
+title: Speech Deficits
 ---
 
-## Aphasia != Dysarthria
+## Aphasia and dysarthria
 
 The problem of speech production is called aphasia.
 This is not the same as dysarthria.
@@ -19,13 +19,13 @@ Cerebral cortex problems that mess up speech processing results in aphasia.
 - Wernicke's
 - Conduction
 
-### Broca's
+### Broca's aphagia
 
 Lesion in the lateral-inferior frontal cortex results in Broca's aphasia.
 A patient with this aphasia speaks effortfuly and sparsely.
 Because the lesion is close to the primary motor tracts, a patient will often have contralateral hemiparesis.
 
-### Wernicke's
+### Wernicke's aphagia
 
 Lesion in the supramarginal gyrus of the posterior temporal lobe results in Wernicke's aphasia.
 A patint with this speaks fluently but ginnerish.
@@ -41,12 +41,12 @@ Repeating words is often difficult for either aphasia.
 However, if there is Broca's aphasia but preserved word repetition, then this is called transcortical motor aphasia.
 Similarly, if there is Wernicke's aphasias but preserved word repetition, then this is called transcortical sensory aphasia.
 
-### Conduction
+### Conduction aphagia
 
 Rarer lesion in the arcuate fasciculus, which is the pathway connecting the Broca's and Wernicke's areas, results in conduction aphasia.
 A patient with this aphasia cannot repeat words.
 
-### Aphagia Math
+### Aphagia math
 
 Broca's = Transcortical Motor Aphasia + Conduction Aphage
 
@@ -54,3 +54,9 @@ Wernicke's = Transcortical Sensory Aphasia + Conduction Aphage
 
 Speech areas:
 ![](image/1.png)
+
+<br>
+
+---
+
+<br>

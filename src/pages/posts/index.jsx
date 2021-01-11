@@ -8,6 +8,7 @@ export default function PostsAll() {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(?<!/pages/about/about).md/" } }
+        sort: { fields: [frontmatter___time], order: DESC }
       ) {
         nodes {
           fields {
@@ -23,7 +24,7 @@ export default function PostsAll() {
                 }
               }
             }
-            topics
+            tags
           }
           wordCount {
             words

@@ -2,7 +2,7 @@
 title: How to publish a Gatsby website to a Google domain using GitHub Pages
 time: 2020-12-28
 cover: cover.jpeg
-topics: ["How To", "Coding", "Web Development", "Gatsby"]
+tags: [How To, Coding, Web Development, Gatsby]
 ---
 
 We will accomplish this in a lean way, without installing gh-pages or anything else.
