@@ -14,7 +14,7 @@ function Posts({ pageTitle, nodes }) {
             why I go back to the already published posts and update them. As I
             adopt new technologies, learn about new medicine, or change my mind,
             I go back and update the corresponding posts. I want to keep
-            everything up-to-date and awesome. Opinions are my own.
+            everything up-to-date and awesome.
           </h4>
         </section>
         <section className="section">

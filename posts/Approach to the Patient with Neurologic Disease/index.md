@@ -56,10 +56,11 @@ Here is the summary of timing.
 ## Let's talk about localization.
 
 From just examining the patient, localize where the problem is or where the lesion is.
-First, localize the lesion on the y-axis of the nervous system.
+
+First, localize the lesion on the y-axis of the nervous system, which spans from the top (CNS) to the bottom (PNS).
 ![](image/localization_y_axis.png)
 
-Then, localize on the x-axis.
+Then, localize on the x-axis, which spans the y-axis coordinate from the superficial to the deep, containing various neural tissues.
 ![](image/localization_x_axis.png)
 
 If the localization does not explain all the signs and symptoms, then consider multifocal etiologies.

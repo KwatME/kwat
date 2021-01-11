@@ -14,11 +14,23 @@ function Footer() {
 
   return (
     <footer className="footer pb-6" role="contentinfo">
-      <section>
-        <h6 className="title is-6 has-text-centered">
-          {data.site.siteMetadata.author} © {new Date().getFullYear()}
-        </h6>
-      </section>
+      <div className="columns has-text-centered-touch">
+        <div className="column">
+          <section className="has-text-left-desktop">
+            <p className="has-text-weight-medium is-italic">
+              Opinions are my own.
+            </p>
+          </section>
+        </div>
+
+        <div className="column">
+          <section className="has-text-right-desktop">
+            <p className="has-text-weight-medium">
+              {data.site.siteMetadata.author} © {new Date().getFullYear()}
+            </p>
+          </section>
+        </div>
+      </div>
     </footer>
   );
 }
