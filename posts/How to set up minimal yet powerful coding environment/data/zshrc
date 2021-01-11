@@ -130,9 +130,6 @@ function cleanpy() {
 
 }
 
-function cleanipynb() {
-}
-
 function cleansh() {
 
 	shfmt -w $1
