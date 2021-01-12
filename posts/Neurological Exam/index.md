@@ -38,6 +38,8 @@ If you suspect any cognitive problem, then do Mini-Mental Status Exam. Score bel
 
 ## Test cranial nerve.
 
+![](image/cn.png)
+
 CN1 and CN2 are not peripheral cranial nerves.
 They are outgrowths of the brain.
 
@@ -184,20 +186,148 @@ A patient with CN4 defect presents with inability to intort.
 
 A patient with CN6 defect presents with inability abduct.
 
+CN5 splits into three branches, each innervating a facial area.
+![](image/cn5.png)
+![](image/cn52.png)
+
+Sensory signal from the facial receptor travels on CN5 to the trigeminal ganglion.
+The signal then descends down the spinal tract of CN5 to the spinal nucleus of CN5 (medulla).
+Then, the signal decussates and ascends via spinothalamic tract to the VPM (thalamus) and finally to the sensory cortex.
+![](image/cn5tobrain.png)
+
+A patient with CN5 defect have problem sensing the facial stimulus.
+Test CN5 by touching a patient's facaial areas.
+
+Patient with trigeminal neuralgia suffers shock-like facial pain, debilitating enough to cause suicide.
+
+Finally, brain does not feel pain, and the perception of headache is actually caused by a problem in cranial fossas and vascular structures, which send pain signal to the brain through CN5.
+
+CN5 feels the face.
+CN7 moves the face.
+There are two pathsways in CN7, one innervating the upper face and the other lower face.
+The lower face is innervated similarly to the innervation of body, which is controlled by the contralateral motor cortex.
+The upper face is more special.
+It is innervated by the motor cortex of both sides.
+Both motor cortexs send motor neuron to each upper face.
+The neuron from the contralateral cortex decussates at pons.
+
+So, a patient presenting with sudden onset left facial drooling, no problem moving eyebrows, and left mouth weakness has problem innervating only the left lower face and thus has a lesion in the CN7 contralateral upper motor neuron.
+
+On the other hand, a patient presenting with drooping of the left face and inability to raise and tightly close the left eye brows may present with a lesion in the CN7 ipsilateral lower motor neuron.
+
+A branch of CN7 senses the taste from the anterior 2/3 of the tongue.
+Another branch of CN7 innervates stapedius muscle.
+So the second patient with a lesion in CN7 lower motor neuron may also present decreased taste and perception of hearing loud noise.
+![](image/cn7.png)
+
+Finally, the upper motor neuron lesion results in acute onset while the lower motor neuron subacute.
+For example, idiopathic Bell's palsy damages the CN7 ipsilateral lower motor neuron and results in subacute signs and symptoms.
+Subacute onset is a hallmark of inflammatory etiology.
+In fact, steroids and anti-virals can treat this Bell's palsy.
+
 ## Test motor functions.
 
-## Test reflexs.
+Focal atrophy, fasciculation, hyporeflexia, and decreased tone suggest lower motor neuron lesion, which can be in any of:
+
+- Anterior horm cell
+- Nerve root
+- Plexus
+- Nerve
+- Neuromuscular junction
+- Muscle
+  ![](image/atrophy.png)
+
+Spasticity, stronger flexion in upper limb, and stronger extension in lower limb (pyramidal pattern of motor deficit) suggest upper motor neuron lesion , which can be in any of:
+
+- Corticospinal tract
+- Corticobulbar tract
+
+Pyramidal pattern makes evolutionary sense.
+Without proper input from the cerebral cortex, the body still maintains to bring something close to the mouth (or bring the hand head the head to protect it) while extending the legs to stay standing.
+Pyramid is stable.
+And the body is trying to be stable during this emergency situation resulting from the upper motor neuron problem.
+
+Rigidity, hypo- or hyperkinetic movement, and bradykinesia suggests extrapyramidal (basal ganglia) lesion, which affects only the contralateral side.
+
+## Test reflexes.
+
+- Biceps
+- Brachioradialis
+- Triceps
+- Patellar
+- Achilles
+
+Patient with upper motor neuron problem (stroke, dimentia, ...) can present with:
+
+- Hyperreflexia
+- Clonus
+- Babinski sign
+- Primitive reflexes (snout, grasp)
+
+![](image/babinski.png)
+
+![](image/primitive.png)
 
 ## Test sensory functions.
 
+If you suspect cortical sensory deficit, test for graphesthesia and stereognosis.
+Patient with a cortical sensory lesion cannot perceive the writing on the skin or cannot identify an object solely by touch.
+
+Test touch, vibration, and proprioception.
+
+The primary sensory tract carrries light touch, vibration, and proprioception sensation.
+It ascends ipsilaterally through the dorsal columns.
+Fibers from the upper limb ascends more laterally compared to the fibers from the lower limb.
+The upper limb fibers synapse on cuneate fasciculus and the lower limb fibers gracile fasciculus.
+The fibers decussate in the medulla, go to the contralateral VPL (thalamus), and finally reach the primary sensory cortex.
+![](image/pst.png)
+
+The spinothalamic tract carries pain and temperature sensation.
+The peripheral afferent fibers enter the spinal cord at the dorsal root ganglia, synapse, then cross the ventral commissure.
+Some motor reflex may be activated at this level.
+Then, the fibers ascend and synapse also on the VPL (thalamus) and finally to the somatosensory cortex.
+![](image/stt.png)
+
 ## Test cerebellar functions.
 
+![](image/cerebellum.png)
+
+Lateral cerebellum coordinates limb movements.
+Cerebellar fibers decussates twice so a lateral cerebellar lesion results in ipsilateral limb coordination deficit.
+Test coordination by having the patient rub a heel to opposite shin.
+Test rapidly alternating movements by having the patient alternatively flip the dorsum and palm of one hand on top of the other.
+
+Medial cerebellum coordinates balance.
+Test balance by having a patient stand straight and tandem walk.
+A patient with medial cerebellar lesion or alcohol intoxication presents with wide gait and imbalance.
+
+![](image/balance.png)
+
 ## Test gait.
+
+Look for:
+
+- Cerebellar ataxia
+- Parkinsonian gait (reduced arm swing, rest tremor)
+- Marionette gait (upper motor neuron deficit)
+- Hemiparetic gait (upper motor neuron deficit)
+- High steppage gait (to avoid foot drop caused by lower motor neuron deficit)
+
+## Test meningitis
+
+Test spinal pain by stretch the spine.
+![](image/meningitis.png)
 
 ## Look out for higher order cognitive functions.
 
 Test apraxia by having the patient show you how he or she brushes teeth.
+
 Test for adnosia by having the patient, with the eyes closed, point to the side you touch. First, touch one side at a time to verify that the primary sensation is intact. And then touch both sides at the same time. If there is adnosia, the patient will neglect the affected side.
+
+## Think about the anatomical map
+
+If there is a damage in an anatomical region map, then the regions mapped near it can be affected as the primary problem progresses.
+![](image/map.png)
 
 <br>
 
@@ -224,3 +354,6 @@ Neologism : Language error of inventing new words
 Paraphasic error : Language error of substituting word or syllable
 
 Ptosis : Upper eye lid drop
+
+VPM : Ventral posteromedial nucleus
+If you suspect cortical sensory deficit, test for graphesthesia and stereognosis.

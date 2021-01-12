@@ -8,7 +8,7 @@ function Layout({ pageTitle, pageDescription, children }) {
   return (
     <>
       <SEO pageTitle={pageTitle} pageDescription={pageDescription} />
-      <container
+      <div
         style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
         <NavigationBar />
@@ -16,7 +16,7 @@ function Layout({ pageTitle, pageDescription, children }) {
           {children}
         </main>
         <Footer />
-      </container>
+      </div>
     </>
   );
 }
