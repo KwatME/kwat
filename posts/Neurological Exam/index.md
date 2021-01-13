@@ -46,7 +46,7 @@ They are outgrowths of the brain.
 If there is problem in CN3 to CN7, then the localization can be:
 
 - Brainstem nuclei
-- CN pathways
+- CN pathway
 - Increased intracranial pressure
 
 Test CN1 by having the patient, with eyes closed, smell something and identify it
@@ -60,17 +60,19 @@ Make sure the patient looks only at your eyes.
 
 If there is visual field deficit, localize the lesion on the visual field pathways.
 
-The light bouncing off of the things in the left visual field hits both eyes right retina.
+The light bouncing off of the things in the left visual field hits the right letina of both eyes.
 Conversely, the light from the things in the right visual field hits the left retina of both eyes.
-So, each eye has 2 (left and right) retinas, one medial and one lateral.
-The lateral retina pathways send the signal to the same side of the occipital lobe.
-But the medial retina pathways cross at the optic chiasm and send the signal to the opposite side of the occipital lobe.
+So, each eye has 2 (left and right) retina areas, one medial and one lateral.
+The lateral retina pathway sends the signal to the occipital lobe of the same side.
+The medial retina pathway crosses at the optic chiasm and sends the signal to the occipital lobe of the opposite side.
 
-Just as medial and lateral retina areas use different pathways to send signals to the occipital lobe, the superior and inferior retina areas also use different pathways.
-The light from the lower visual field hits the superior retina area, which sends the signal through the parietal lobe.
-The light from the upper visual field hits the inferior retina area, which sends the signal through posterior temporal lobe Meyer's loop.
+Just as the medial and lateral retina areas use different pathways to get to the occipital lobe, the superior and inferior retina areas also use different pathways.
+The light from the lower visual field hits the superior retina area of both eyes.
+These superior retina areas send the signal to the parietal lobe, which relays the signal to the occipital lobe.
+The light from the upper visual field hits the inferior retina area of both eyes.
+These inferior retina areas send the signal to the Meyer's loop in the posterior temporal lobe, which relays the signal to the occipital lobe.
 
-Here are the pathways (without showing the superior retina pathway through the parieral lobe) and common lesions.
+Here are the pathways (without showing the superior retina pathway which goes through the parieral lobe) and some common lesions.
 ![](image/visual_field_pathways.png)
 
 Here are some field loss examples.
@@ -214,11 +216,11 @@ The neuron from the contralateral cortex decussates at pons.
 So, a patient presenting with sudden onset left facial drooling, no problem moving eyebrows, and left mouth weakness has problem innervating only the left lower face and thus has a lesion in the CN7 contralateral upper motor neuron.
 
 On the other hand, a patient presenting with drooping of the left face and inability to raise and tightly close the left eye brows may present with a lesion in the CN7 ipsilateral lower motor neuron.
+![](image/cn7.png)
 
 A branch of CN7 senses the taste from the anterior 2/3 of the tongue.
 Another branch of CN7 innervates stapedius muscle.
 So the second patient with a lesion in CN7 lower motor neuron may also present decreased taste and perception of hearing loud noise.
-![](image/cn7.png)
 
 Finally, the upper motor neuron lesion results in acute onset while the lower motor neuron subacute.
 For example, idiopathic Bell's palsy damages the CN7 ipsilateral lower motor neuron and results in subacute signs and symptoms.
@@ -235,7 +237,9 @@ Focal atrophy, fasciculation, hyporeflexia, and decreased tone suggest lower mot
 - Nerve
 - Neuromuscular junction
 - Muscle
-  ![](image/atrophy.png)
+
+Less lower motor neuron innervation, more atrophy.
+![](image/atrophy.png)
 
 Spasticity, stronger flexion in upper limb, and stronger extension in lower limb (pyramidal pattern of motor deficit) suggest upper motor neuron lesion , which can be in any of:
 
@@ -264,8 +268,11 @@ Patient with upper motor neuron problem (stroke, dimentia, ...) can present with
 - Babinski sign
 - Primitive reflexes (snout, grasp)
 
+Babinski sign is a primitive reflex that extends the big toe upen sole stimulation.
 ![](image/babinski.png)
 
+Snout reflex protrudes the tongue to taste the thing that touches the lip.
+Hand and foot grasp reflex make the hand and foot hold the thing that touches them.
 ![](image/primitive.png)
 
 ## Test sensory functions.
@@ -313,9 +320,10 @@ Look for:
 - Hemiparetic gait (upper motor neuron deficit)
 - High steppage gait (to avoid foot drop caused by lower motor neuron deficit)
 
-## Test meningitis
+## Test meningitis.
 
-Test spinal pain by stretch the spine.
+Meningitis inflames the spinal cord and make it more sensitive.
+Stretch the spine to test for pain response.
 ![](image/meningitis.png)
 
 ## Look out for higher order cognitive functions.
