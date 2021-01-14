@@ -59,6 +59,8 @@ Or, the big bones used up their hematopoiesis power.
 But in any event, big bones, liver, and all the things that used to do hematopoiesis will remember how to do it.
 When your body needs a lot of hematopoiesis, these structure put their hematopoiesis hat on and start making blood cells.
 
+Finally, hematopoiesis is a dynamic process and adapts to your physiological demand.
+
 ## Let's talk about how specific cell types mature.
 
 ### HCSs become myeloblasts, which become granulocytes.
@@ -86,14 +88,15 @@ This transition from the cortex to the medulla is interesting.
 Maybe, the chemicals are too toxic to our own cells and that's why we make these toxic granules near the cortex where there is less cells.
 Or maybe, this maturation needs some minerals that are more abundunt in the hard bone.
 
-### RBCs develop around a macrophage.
+### RBCs lose nucleus during their maturation.
 
-This aggregation of RBCs around a central macrophage is called erythroid island.
+RBCs develop around a macrophage.
+The aggregation of RBCs around a central macrophage is the erythroid island.
 ![](image/Screen Shot 2021-01-13 at 10.24.41 AM.png)
 
-This makes some sense because macrophages like to eat RBCs.
-In your liver and spleen, there are types of macrophages whose job is to eat bad or worn out RBCs.
-This island may be the quality control center for budding RBCs.
+This makes sense because macrophages may be cleaning up the expelled nucleus or doing RBC quality control.
+In liver and spleen, macrophages eat deformed RBCs.
+In this island, they may be doing the same quality control for the budding RBCs.
 
 ### Platelets are fragments of big multi-nucleated cell.
 

@@ -2,7 +2,7 @@
 title: How to set up Google Analytics on a Gatsby website
 time: 2020-12-29T11:50:12.759
 cover: cover.jpeg
-tags: [How To, Coding, Web Development, Gatsby]
+tags: [How To, Coding, Web Development]
 ---
 
 ## Step 1: Make Google Analytics account (if you haven't)

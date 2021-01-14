@@ -1,6 +1,6 @@
 ---
 cover: cover.jpeg
-tags: [Medicine, Neurology]
+tags: [Medicine, Neural]
 time: 2021-01-12 16:27:06.601037
 title: Headache
 ---

@@ -1,6 +1,6 @@
 ---
 cover: cover.jpeg
-tags: [Medicine, Neurology]
+tags: [Medicine, Neural]
 time: 2021-01-12 16:18:19.946245
 title: Primary Headache
 ---

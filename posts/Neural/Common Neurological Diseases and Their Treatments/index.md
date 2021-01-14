@@ -1,6 +1,6 @@
 ---
 cover: cover.jpeg
-tags: [Medicine, Neurology]
+tags: [Medicine, Neural]
 time: 2021-01-11 21:22:10.066852
 title: Common Neurological Diseases and Their Treatments
 ---

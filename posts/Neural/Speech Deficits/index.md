@@ -1,6 +1,6 @@
 ---
 cover: cover.jpeg
-tags: [Medicine, Neurology]
+tags: [Medicine, Neural]
 time: 2021-01-11 09:10:50.999617
 title: Speech Deficits
 ---

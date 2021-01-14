@@ -1,6 +1,6 @@
 ---
 cover: cover.jpeg
-tags: [Medicine, Neurology]
+tags: [Medicine, Neural]
 time: 2021-01-12 11:59:14.352043
 title: Secondary Headache
 ---
