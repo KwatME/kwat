@@ -30,7 +30,7 @@ Mood disorders are classified by which levels show up in a patient.
 ## Major depressive disorder is the most common mood disorder.
 
 A patient has this if 5 or more of the following, including one of the required one, is true for 2 or more weeks and there is functional imparement:
-*S*leep low
+*S*leep low or high
 *I*nterests low (required for diagnosis)
 *G*uitiness high
 *E*nergy low
@@ -107,8 +107,9 @@ These 3 bipolar disorders can be described with 2 adjectives:
 - Mixed (having low and high featuers at the same time)
 - Repid cycling (4 or more episodes per year)
 
+Bipolar disorders start in teens and early 20s.
 Untreated bipolar disorder can lead to social, emotional and financial problems as well as substance abuse and suicide.
-Early diagnosis and early treatment offer a good chance for a full and productive life.
+Early diagnosis and early treatment offer a good chance for a productive life.
 Finally bipolar disorders are associated with high cognitive functions.
 ![](image/elon.png)
 
