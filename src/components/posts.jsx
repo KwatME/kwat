@@ -10,11 +10,8 @@ function Posts({ pageTitle, nodes }) {
         <section className="section">
           <h1 className="title is-1">{pageTitle}</h1>
           <h4 className="subtitle is-4">
-            The only thing constant in life is change, hopefully growth. That's
-            why I go back to the already published posts and update them. As I
-            adopt new technologies, learn about new medicine, or change my mind,
-            I go back and update the corresponding posts. I want to keep
-            everything up-to-date and awesome.
+            I like refactoring. As I learn about new things or change my mind, I
+            am going to update the posts. Everthing is work in progress.
           </h4>
         </section>
         <section className="section">
