@@ -5,13 +5,10 @@ time: 2021-01-18 11:38:39.257788
 title: Psychotic Disorders
 ---
 
-## There are multiple psychotic disorders.
-
-They all have in common the symptoms of psychosis.
-Psychosis is not a diagnosis.
-It is a collection of symptoms.
+## Psychosis is a collection of symptoms.
 Psychosis is narrowly defined as inability to distinguish between what is real and unreal.
 It is broadly defined as deficit in perception, emotion, and or communication.
+There are multiple disorders that present with psychosis.
 
 ## Schizophrenia is a prominent psychotic disorder.
 
@@ -45,15 +42,12 @@ Treatment for all these psychotic disorders are the same.
 
 Be mindful that a schizophrenic person is focussed on and scared of routine things.
 
-## Psychosis can happen in other settings.
-
+## Various conditions can lead to psychosis.
 - Substance use
 - Metabolic disorders
 - Depression (more severe ones)
-- Bipolar diorders
+- Bipolar diorders (schizoaffective disorder is when bipolar disorder and schizophrenia happen at the same time)
 
-Schizoaffective disorder is when bipolar disorder aand schizophrenia happen at the same time.
-
+## There are realted but not psychotic conditions.
 Delusional disorder is when a person has only the delusional symptom.
-
 Schizoid personality disorder is having a milder schizophrenia without full psychosis.
