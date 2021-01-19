@@ -39,6 +39,8 @@ Here, we are going to focus on chronic fatigue in people who are otherwise healt
 - Rheumatologic (autoimmune)
 - Idiopathic (chrofic fatigue syndrome)
 
+![](image/a.png)
+
 ## Insomnia causes fatigue.
 
 Primary insomnia can be:
