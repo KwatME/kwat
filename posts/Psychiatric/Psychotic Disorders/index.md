@@ -6,6 +6,7 @@ title: Psychotic Disorders
 ---
 
 ## Psychosis is a collection of symptoms.
+
 Psychosis is narrowly defined as inability to distinguish between what is real and unreal.
 It is broadly defined as deficit in perception, emotion, and or communication.
 There are multiple disorders that present with psychosis.
@@ -43,11 +44,13 @@ Treatment for all these psychotic disorders are the same.
 Be mindful that a schizophrenic person is focussed on and scared of routine things.
 
 ## Various conditions can lead to psychosis.
+
 - Substance use
 - Metabolic disorders
 - Depression (more severe ones)
 - Bipolar diorders (schizoaffective disorder is when bipolar disorder and schizophrenia happen at the same time)
 
 ## There are realted but not psychotic conditions.
+
 Delusional disorder is when a person has only the delusional symptom.
 Schizoid personality disorder is having a milder schizophrenia without full psychosis.
