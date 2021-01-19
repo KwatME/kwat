@@ -11,7 +11,7 @@ function NavigationBar() {
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <span className="navbar-brand">
         <Link className="navbar-item" to="/">
-          <h5 className="title is-5">~</h5>
+          <p className="is-size-4 has-text-weight-bold">~</p>
         </Link>
         <button
           className={`navbar-burger button is-white ${
