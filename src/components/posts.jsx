@@ -10,8 +10,8 @@ function Posts({ pageTitle, nodes }) {
         <section className="section">
           <h1 className="title is-1">{pageTitle}</h1>
           <h4 className="subtitle is-4">
-            I like refactoring. As I learn about new things or change my mind, I
-            am going to update the posts. Everthing is work in progress.
+            Everthing is work in progress. As I learn about new things or change
+            my mind, I am going to update the posts.
           </h4>
         </section>
         <section className="section">
