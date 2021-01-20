@@ -33,27 +33,27 @@ Screen for depression
 
 Screen for mania
 
-Scren for Anxiery
+Screen for anxiery
 
-Psychosis
+Screen for psychosis
 
 ## Past Psychiatric History
 
 If the patient denies any X, then list some examples of X and ask again.
 
-"Can you tell me when your first professional psychiatric contact was please?"
+"Can you tell me about when your first professional psychiatric contact was please?"
 
 "Can you tell me about your diagnoses please?"
 
-"Have you ever been hospitalized for any psychiatric reasons?"
-
 "Have you ever had psychotherapy?"
+
+"Have you ever been hospitalized for any psychiatric reasons?"
 
 "Can you tell me about your experiences with any psychiatric medications?"
 
-"Have you ever thought about ending your own life?"
-
 "Have you ever hurt yourself?"
+
+"Have you ever thought about ending your own life?"
 
 "Have you had any trauma?"
 
