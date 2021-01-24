@@ -6,6 +6,7 @@ title: Neuropathology Overview
 ---
 
 ## Brain is more specialized than other organs.
+
 Its regions have specialized functions and symptoms.
 
 ![](image/Screen Shot 2021-01-20 at 1.12.20 PM.png)
@@ -14,8 +15,8 @@ Its regions have specialized functions and symptoms.
 
 ![](image/Screen Shot 2021-01-20 at 1.12.38 PM.png)
 
-
 ## Mass effect is more serious in the brain because it is confined.
+
 Mass effect compromises first CSF, then blood, and then the parenchyma.
 
 ![](image/Screen Shot 2021-01-20 at 1.13.01 PM.png)
@@ -23,6 +24,7 @@ Mass effect compromises first CSF, then blood, and then the parenchyma.
 ![](image/Screen Shot 2021-01-20 at 1.13.14 PM.png)
 
 ## Immunostain and see.
+
 Use anti-:
 
 - Cytokeratin for epithelial intermediate filament
@@ -32,6 +34,7 @@ Use anti-:
 - Snaptophysin for synaptic vescicle
 
 ## Grey matter has more neuron bodies.
+
 (White matter has more neuron axons.)
 
 ![](image/Screen Shot 2021-01-20 at 1.13.22 PM.png)

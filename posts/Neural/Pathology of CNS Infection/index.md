@@ -6,7 +6,9 @@ title: Pathology of CNS Infection
 ---
 
 ## CNS infection is rare.
+
 But some factors make them more likely.
+
 - Younger than 5 (70% of bacterial meningitis)
 - Older than 70 (20% of bacterial meningitis)
 - Heart disease
@@ -20,11 +22,14 @@ But some factors make them more likely.
 - Endemic area
 
 ## Be fast when dealing with a CNS infection.
+
 Diagnose quickly.
 If you suspect a CNS infection in a patient, start empirical antibacterial and antiviral treatment before confirming.
 
 ## Infections can be at any depth.
+
 From superficial to deep:, they are:
+
 - Epidural
 - Subdural
 - Subarachnoid
@@ -34,6 +39,7 @@ Dura, arachnoid, and pia matters are all part of meninges.
 So an infection of any of these can cause meningitis.
 
 ## Infections manifest as meningitis, abscess, or encephalitis.
+
 Any pathogen can cause any of these.
 
 ![](image/Screen Shot 2021-01-23 at 9.36.29 AM.png)
@@ -115,6 +121,7 @@ So infection in this space is usually more global and soak into the sulci.
 ![](image/Screen Shot 2021-01-23 at 9.40.57 AM.png)
 
 ## Acute meningitis is mostly caused by bacteria.
+
 Commonly, diplococci from other part of the body spread to the subarachnoid space hematologically.
 Fungi and parasites can also cause this too.
 
@@ -127,6 +134,7 @@ Fungi and parasites can also cause this too.
 ![](image/Screen Shot 2021-01-23 at 9.41.52 AM.png)
 
 Acute meningitis is difficult to treat and can lead to other problems:
+
 - Hydrocephalus
 - Cranial nerve damage
 - Infarct
@@ -144,6 +152,7 @@ Acute meningitis is difficult to treat and can lead to other problems:
 ![](image/Screen Shot 2021-01-23 at 9.47.10 AM.png)
 
 ## Viruses cause aseptic meningitis.
+
 Aseptic meningitis is self limited.
 
 ![](image/Screen Shot 2021-01-23 at 9.49.18 AM.png)
@@ -201,7 +210,8 @@ They grow into abscess and can mimic neoplasm.
 ![](image/Screen Shot 2021-01-23 at 9.53.28 AM.png)
 
 ## Coccidioidomycosis is chronic infection of giant cells.
-The infected giant cells form granulomas. 
+
+The infected giant cells form granulomas.
 The patients need to take anti-fungal for life.
 
 ![](image/Screen Shot 2021-01-23 at 9.53.54 AM.png)
@@ -221,6 +231,7 @@ The patients need to take anti-fungal for life.
 ![](image/Screen Shot 2021-01-23 at 9.55.15 AM.png)
 
 ## Naegleria fowleri is the brain eating amoeba.
+
 These parasites live in warm water and get into a brain via nose.
 
 ![](image/Screen Shot 2021-01-23 at 9.55.30 AM.png)
@@ -283,14 +294,12 @@ JCV damages white matters and cause progressive multifocal leukoencephalitis.
 
 ![](image/Screen Shot 2021-01-23 at 10.10.39 AM.png)
 
-
 ![](image/Screen Shot 2021-01-23 at 10.11.18 AM.png)
 
 Rabies virus can travel from peripheral nervous system to the Purkinje neuron.
 Rabies virus forms Negri body inclusion.
 
 ![](image/Screen Shot 2021-01-23 at 10.11.31 AM.png)
-
 
 Zika virus destroys parenchyma.
 
