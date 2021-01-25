@@ -1,15 +1,13 @@
 " ================================================================================
 " Appearance
 " ================================================================================
-" set background=dark
+set title
 
-" set title
+set guifont=Menlo-Regular:h16
 
-set guifont=Menlo-Regular:h13
+set lines=72
 
-set lines=56
-
-set columns=112
+set columns=96
 
 set number
 
@@ -20,18 +18,18 @@ set ruler
 " ================================================================================
 " Language
 " ================================================================================
-" set encoding=utf-8
+"set encoding=utf-8
 
 syntax enable
 
 " ================================================================================
 " Line
 " ================================================================================
-" set wrap
+"set wrap
 
 set linebreak
 
-" set display+=lastline
+"set display+=lastline
 
 set scrolloff=8
 
@@ -50,11 +48,11 @@ set shiftwidth=4
 
 set expandtab
 
-" set autoindent
+"set autoindent
 
-" filetype plugin indent on 
+"filetype plugin indent on 
 
-" set backspace=indent,eol,start
+"set backspace=indent,eol,start
 
 " ================================================================================
 " Search
@@ -82,7 +80,7 @@ set mps+=<:>
 " ================================================================================
 set noerrorbells
 
-set visualbell
+set novisualbell
 
 " ================================================================================
 " Interface
@@ -91,15 +89,15 @@ set lazyredraw
 
 set wildmenu
 
-" set mouse=a
+"set mouse=a
 
 " ================================================================================
 " Input and output
 " ================================================================================
-" set autoread
+"set autoread
 
-" set history=1000
-"
+"set history=1000
+
 " Establish ~/.cache/vim
 if empty(glob('~/.cache/vim'))
   silent !mkdir -p ~/.cache/vim
@@ -138,14 +136,13 @@ Plug 'sheerun/vim-polyglot'
 
 " coc, which auto-completes code
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" After installing coc, set up coc language servers by:
-" :CocInstall coc-sh coc-html coc-json coc-julia coc-pyright 
+" Set up language servers: CocInstall coc-sh coc-html coc-json coc-julia coc-pyright
 
 " ale, which shows linting
 Plug 'dense-analysis/ale'
 " Make sure to have language specific linters
 
-" TODO
+" julia vim, which enables julia features
 Plug 'JuliaEditorSupport/julia-vim'
 
 " End of list
