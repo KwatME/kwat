@@ -72,6 +72,9 @@ Demyelination is diffuse and can show up in a neuroimaging as sparse shadows in 
 The attack is ongoing.
 A patient presents with multiple discreet episodes of neurologic dysfunction.
 
+Plasma cells produce oligoclonal band.
+Oligoclonal bands present in CSF but absent in the blood suggests multiple sclerosis.
+
 ## 85% of multiple sclerosis is relapsing and remitting multiple sclerosis.
 
 A new demyelination comes with a new neurologic symptom, which can last from hours to days.

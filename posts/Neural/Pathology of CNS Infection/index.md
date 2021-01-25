@@ -291,6 +291,7 @@ West Nile virus infects spinal cord neurons.
 
 JCV infects the oligodendrocytes, each of which myelinates many axons.
 JCV damages white matters and cause progressive multifocal leukoencephalitis.
+It is common in people with immunodeificiency.
 
 ![](image/Screen Shot 2021-01-23 at 10.10.39 AM.png)
 
