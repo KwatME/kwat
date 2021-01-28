@@ -103,7 +103,7 @@ thing; timing
 
 ### Home
 
-### Work
+### Employment
 
 ### Sleep
 
@@ -112,6 +112,10 @@ thing; timing
 ### Exercise
 
 ### Hobby
+
+### Spirituality
+
+### Family
 
 ### Partner
 
@@ -134,6 +138,8 @@ quantity; timing
 ### Sex
 
 ### Psychiatry
+
+### Crime
 
 ### Safety
 

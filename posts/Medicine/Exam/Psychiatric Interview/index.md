@@ -7,37 +7,43 @@ title: Psychiatric Interview
 
 ## Introduction
 
-"My name is Kwat Medetgul-Ernar. Please call me Kwat, like cumquat. I'm a medical student. And I'm here get talk to you, get to know you, and see if I can help you."
+My name is...
 
-"How should I call you?"
+Call me...
 
-"I want to assure you that everything we talk about is confidential between us and the healthcare team, except when there is an immediate threat to someone."
+I'm a...
+
+I'm here to...
+
+Call you?
+
+I want to assure you that everything we talk about is confidential between us and the healthcare team, except when there is an immediate threat to someone.
 
 ## Chief Complain
 
-"Can you tell me what's going on please?"
+?
 
 ## History of Present Illness
 
-"Can you talk more about it please?"
+Tell more?
 
-"Can you tell me about how your mood has been please?"
+Mood?
 
-Ask questions and rebuild the story.
+Build story
 
-## Medications
+## Medication
 
-"Can you tell me what medications you are taking and how much please?"
+What, how much, adherence?
 
-## Psychiatric Review of Systems
+## Screening
 
-Screen for anxiery
+Anxiery
 
 - Worry
 - Trouble relaxing
 - Irritability
 
-Screen for depression (1 required + 5)
+Depression (1 required + 5)
 
 - **I**nterests low (required)
 - **M**ood low (required)
@@ -51,7 +57,7 @@ Screen for depression (1 required + 5)
 - **2 week**
 - **Impairment**
 
-Screen for mania (3 | 4 with irritability)
+Mania (3 | 4 with irritability)
 
 - **P**ace high
 - **O**utlandish high
@@ -64,7 +70,7 @@ Screen for mania (3 | 4 with irritability)
 - **1 week**
 - **Impairment**
 
-Screen for psychosis (1 required + 2)
+Psychosis (1 required + 2)
 
 - Hallucination (required)
 - Delusion (false and fixed belief) (required)
@@ -74,7 +80,7 @@ Screen for psychosis (1 required + 2)
 - **6 month**
 - **Impairment**
 
-## Past Psychiatric History
+## Psychiatric History
 
 If the patient denies any X, then list some examples of X and ask again.
 
@@ -96,7 +102,13 @@ If the patient denies any X, then list some examples of X and ask again.
 
 "Can you tell me about your experience with violence?"
 
-## Substance Use History
+## Childhood
+
+## Family Psychiatry
+
+Include substance and suicide
+
+## Substance History
 
 Ask about:
 
@@ -115,32 +127,38 @@ Ask about:
 - Hallucinogen
 - Perscribed drug
 
-## Family Psychiatric History
-
-Include substance and suicide
-
 ## Social History
 
-Family
+Home
 
-Childhood
+Sleep
+
+Diet
+
+Exercise
 
 Education
 
 Employment
 
-Social support
-
-Crime
+Hobby
 
 Spirituality
 
-christrian
+Family
 
-Sexuality
+Partner
+
+Sex
+
+Crime
+
+Safety
 
 Community
 
+Support
+
 ## Medical History
 
-## Allergies
+Allergy

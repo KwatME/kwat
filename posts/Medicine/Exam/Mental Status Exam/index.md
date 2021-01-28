@@ -7,60 +7,27 @@ title: Mental Status Exam
 
 ## Appearance
 
-- Groom
-- Hygiene
-- Cloth
-
 ## Behavior
-
-- Cooperativeness
-- Eye contact
-- Psychomotor
 
 ## Speech
 
-- Rate
-- Tone
-- Rhythm
-- Volume
-
-## Mood
+## Mood (stated emotion)
 
 Patient's own words
 
-## Affect
+## Affect (observed emotion)
 
-- Euthymic
-- Dysphoric
-- Labile
-- Anxious
+## Thought Process
 
-## Thought process
-
-- Suicidal ideation
-- Homicidal ideation
-- Paranoia
-- Grandiosity
-- Anxious ruminations
-
-## Perception
-
-- Hallucination
-
-## Insight and Judgement
-
-- Good
-- Fair
-- Limited
-- Impared
-- Poor
+## Thought Content
 
 ## Congition
 
-- Gross deficit
-- Orientation
-- Attention
-- MMSE score
+## Defense
+
+## Insight
+
+## Judgement
 
 ![](mmse1.png)
 
