@@ -11,14 +11,25 @@ People with obsessive-compulsive and narcissistic personality disorders are asso
 Half of the male and one fifth of the female prisoners have antisocial personality disorder.
 But with professional help, the people with personality disorders can have much better outcome in life.
 
+## Diagnosing personality disorder requires not having other psychiatric conditions.
+
+Diagnosis requires ruling out myriad of conditions that can produce symptoms of personality disorders.
+
+Argument for diagnosing:
+
+- Duty to warn
+
+Argument against diagnosing:
+
+- Missing information
+- Bad ethic
+- Implying causality
+
 ## Personality disorder onset early in life.
 
-Personality disorders are strongly heritable and biologically based.
-Childhood adversities increase the likely hood of developing them too.
+Personality disorders are strongly heritable (40-60% inheritance in twin studies) and biologically based.
+Childhood adversities increase the likely hood of developing them.
 People with personality disorders have altered neurotransmitter, neuroendocrine, metabolic, and neural structures.
-
-People with personality disorders are defensive.
-They also associate with people who also have personality or other psychiatric disorders.
 
 ## People with personality disorders have in common:
 
@@ -26,32 +37,37 @@ They also associate with people who also have personality or other psychiatric d
 - Difficulty relating to self and others
 - Rigid thinking
 - Maladaptation to environment
-- Impaired social, occupational, or interpersonal functioning:w
+- Impaired social, occupational, or interpersonal functioning
+- Defensiveness
 
-They also likely have other co-occuring major mental illness.
+Splitting is a defensive mechanism they use to divide good from evil.
+They also associate with people who also have personality or other psychiatric disorders.
 
-## Personality disorders can have related conditions with similar symptoms.
+They tend to not recognize their personality shortcomings.
+But they attribute any dysfunction to causes other than their personalty.
+This is why dysfunction is not required to diagnose a personality disorder.
 
-Obsessive compulsive personality disorder is not obsessive-compulsive disorder
-The former is a disorder where the a person has an excessive capacity to delay gratification.
-Whereas the latter is characterized by difficulty with obsessive and intrusive thought patterns.
-Furthermore, the latter is marked with specific obsessions like symmetry, ordering, hoarding, and checking.
+Obsessive compulsive personality disorder is not obsessive-compulsive disorder.
+The former is egosyntonic.
+A person likes the obsession and compulsion, and has an excessive capacity to delay gratification.
+The latter is egodystonic.
+A person has problems with the obsession and compulsion, which often is about symmetry, ordering, hoarding, and checking.
 
 ## There are 3 clusters of personality disorders:
 
-- Cluster A: odd, eccentric, aloof, paranoid, bizarre thinking
-- Cluster B: instability of behavior, mood, and relationships
-- Cluster C: obsessive, fearful, anxious thoughts
+- Cluster A: weired
+- Cluster B: wild (antisocial personality disorder, histrionic personality disorder, borderline personality disorder)
+- Cluster C: worried
 
-## Cluster B has antisocial personality disorder, histrionic personality disorder, and borderline personality disorder.
+## Antisocial personality disorder is often misrepresented by as being "not social".
 
-Antisocial personality disorder is often misrepresented by as being "not social".
 But in fact people with this are often charming.
 Yet they lack empathy and disregard for rules and social norms.
 
-Histrionic personality disorder is marked by need to be the center of attention, a theatrical outward emotional expression, and rapidly shifting emotions.
+## Histrionic personality disorder is marked by need to be the center of attention, a theatrical outward emotional expression, and rapidly shifting emotions.
 
-Borderline personality disorder is marked with attention and treatment seeking characters.
+## Borderline personality disorder is marked with attention and treatment seeking characters.
+
 It is also particularly associated with self-harm.
 
 ## Pharmacotherapy remains controversial but is widespead in clinical practice.

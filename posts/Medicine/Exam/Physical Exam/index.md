@@ -114,6 +114,8 @@ Touch from outside.
 
 Look inside mouth.
 
+(Place tongue blade on the side to avoid gag reflex.)
+
 Check tongue.
 
 Touch from inside.
@@ -229,6 +231,8 @@ Check flip flop hands.
 
 ## Measure radial pulse
 
+(Systolic blood pressure of at least 80 leads to radial pulse.)
+
 ## Measure blood pressure
 
 ## Measure jagular venous pulsation
@@ -238,6 +242,8 @@ Have patient angle at 45 degrees and turn head to the left, measure distance fro
 5cm + distance should be less than 10cm.
 
 ## Check carotid pulse
+
+(Systolic blood pressure of at least 60 leads to carotid pulse.)
 
 One side at a time, feel artery.
 

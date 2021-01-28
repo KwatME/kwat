@@ -8,25 +8,49 @@ title: Eating Disorders
 ## Pediatric eating disorders are more common than type 2 diabetes.
 
 They are underdiagnosed by primary care physicians.
-And early intervention has better prognosis.
+Early intervention has better prognosis.
 
-Anorexia nervosa is an eating disorder.
-People with anorexia nervosa tend to eat less and exercise more.
-The life time prevalence is 2%.
+Pica is an eatind disorder of eating non-food.
+
+Rumination disorder is disliking food in mouth or swallowing.
+
+Avoidant/restrictive food intake disorder is picky eating.
+It is not about weight gain or body image.
+
+Anorexia nervosa is the eating disorder of weight loss.
+People with anorexia nervosa have body image concerns.
+They eat less and exercise more.
+Their growth curve drops.
 Onset is teenage.
+The life time prevalence is 2%.
 The mortality rate is 6%, the highest in any psychiatric illness.
+There are restricting type and bullimia type.
 
-Bullimia nervosa is another eating disorder.
-People with bullimia nervosa tend to binge eat and throw up (or purge in some other way).
-The life time prevalence is 3%.
+Bullimia nervosa is the eating disorder of normal weight.
+People with bullimia nervosa have body image concerns.
+They binge eat and purge (throw up).
 Onset is later teen.
+The life time prevalence is 3%.
 
-Binge eating disorder is also a specific eating disorder.
-People with binge eating disorder binge eat, but unlike bullima nervosa, do not compensate after the eating.
+Binge eating disorder is also an eating disorder of normal or elevated weight.
+Binge eating disorder is associated with low socioeconomic status.
+They lose control and binge eat.
+They often have body image concerns.
+Unlike bullima nervosa, however, they do not compensate after eating.
+
+Other eating disorders are:
+
+- Atypical anorexia nervosa (less weight loss)
+- Bulimia nervosa of low frequency or duration
+- Binge eating disorder of low frequency or duration
+- Purging disorder (no binge-eating)
+- Night eating syndrome
 
 Eating disorders that do not meet the criteria for a specific one are all classified as "eating disorders not otherwise specified".
 
 All eating disorders have higher prevalence in females.
+
+Blacks with eating disorder is under diagnosed and under served.
 
 ## Many things can cause eating disorders.
 
