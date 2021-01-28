@@ -11,9 +11,6 @@ export default function PostsAll() {
         sort: { fields: [frontmatter___time], order: DESC }
       ) {
         nodes {
-          fields {
-            slug
-          }
           frontmatter {
             title
             time(formatString: "MMMM DD, YYYY")
@@ -24,6 +21,9 @@ export default function PostsAll() {
                 }
               }
             }
+          }
+          fields {
+            slug
             tags
           }
           wordCount {

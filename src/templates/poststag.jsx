@@ -6,13 +6,10 @@ import Posts from "../components/posts";
 export const result = graphql`
   query($tagRegexString: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { tags: { regex: $tagRegexString } } }
+      filter: { fields: { tags: { regex: $tagRegexString } } }
       sort: { fields: [frontmatter___time], order: DESC }
     ) {
       nodes {
-        fields {
-          slug
-        }
         frontmatter {
           title
           time
@@ -23,6 +20,9 @@ export const result = graphql`
               }
             }
           }
+        }
+        fields {
+          slug
           tags
         }
         wordCount {

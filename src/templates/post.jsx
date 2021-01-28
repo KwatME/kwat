@@ -18,6 +18,8 @@ export const result = graphql`
             }
           }
         }
+      }
+      fields {
         tags
       }
       wordCount {
@@ -49,6 +51,16 @@ export default function Post({ data }) {
   const node = data.markdownRemark;
   const pageTitle = node.frontmatter.title;
 
+  const {
+    fields: { tags },
+  } = node;
+  let tagLinks;
+  if (0 < tags.length) {
+    tagLinks = tags
+      .map((tag) => <Link to={`/tags/${tag}`}>{tag}</Link>)
+      .reduce((pre, cur) => [pre, ", ", cur]);
+  }
+
   return (
     <Layout pageTitle={pageTitle}>
       <section className="section">
@@ -69,9 +81,7 @@ export default function Post({ data }) {
             </div>
             <div className="column">
               <section className="is-pulled-right heading subtitle is-6">
-                {node.frontmatter.tags
-                  .map((tag) => <Link to={`/tags/${tag}`}>{tag}</Link>)
-                  .reduce((pre, cur) => [pre, ", ", cur])}
+                {tagLinks}
               </section>
             </div>
           </div>

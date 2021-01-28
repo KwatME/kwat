@@ -5,6 +5,18 @@ import BackgroundImage from "gatsby-background-image";
 import styleUnit from "../../helpers/styleunit";
 
 function PostCard({ node }) {
+  const {
+    fields: { tags },
+  } = node;
+  let tagLinks;
+  if (0 < tags.length) {
+    tagLinks = tags.map((tag) => (
+      <Link className="tag is-radiusless is-primary" to={`/tags/${tag}`}>
+        {tag}
+      </Link>
+    ));
+  }
+
   return (
     <Link to={node.fields.slug}>
       <div className="card">
@@ -24,13 +36,7 @@ function PostCard({ node }) {
           </section>
           <section className="content">{node.excerpt}</section>
         </section>
-        <section className="tags is-pulled-right">
-          {node.frontmatter.tags.map((tag) => (
-            <Link className="tag is-radiusless is-primary" to={`/tags/${tag}`}>
-              {tag}
-            </Link>
-          ))}
-        </section>
+        <section className="tags is-pulled-right">{tagLinks}</section>
       </div>
     </Link>
   );

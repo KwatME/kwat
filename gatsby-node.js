@@ -1,3 +1,4 @@
+const assert = require("assert");
 const path = require("path");
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -7,15 +8,33 @@ exports.onCreateNode = ({ node, actions }) => {
     node.internal.type === "MarkdownRemark" &&
     /(?<=\/posts\/.+\/index).md/.test(node.fileAbsolutePath)
   ) {
+    const names = node.fileAbsolutePath.split("/");
+
+    const nName = names.length;
+
+    const postNameIndex = nName - 2;
+
+    const postName = names[postNameIndex];
+
+    console.log(`Processing markdown ${postName}...`);
+
+    assert(postName === node.frontmatter.title);
+
     createNodeField({
       node,
       name: "slug",
-      value: path.join(
-        "/",
-        "posts",
-        path.basename(path.dirname(node.fileAbsolutePath)),
-        "/"
-      ),
+      value: path.join("/", "posts", postName, "/"),
+    });
+
+    const directoryNames = names.slice(
+      names.findIndex((name) => name === "posts") + 1,
+      postNameIndex
+    );
+
+    createNodeField({
+      node,
+      name: "tags",
+      value: directoryNames.concat(node.frontmatter.tags),
     });
   }
 };
@@ -33,8 +52,6 @@ exports.createPages = async ({ graphql, actions }) => {
           id
           fields {
             slug
-          }
-          frontmatter {
             tags
           }
         }
@@ -75,7 +92,7 @@ exports.createPages = async ({ graphql, actions }) => {
   let nodeIndex;
   for (nodeIndex = 0; nodeIndex < nNode; nodeIndex++) {
     const {
-      frontmatter: { tags },
+      fields: { tags },
     } = nodes[nodeIndex];
 
     const nTag = tags.length;
