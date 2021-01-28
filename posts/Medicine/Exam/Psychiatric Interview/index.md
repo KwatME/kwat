@@ -7,102 +7,87 @@ title: Psychiatric Interview
 
 ## Introduction
 
-My name is...
-
-Call me...
-
-I'm a...
-
-I'm here to...
-
-Call you?
-
-I want to assure you that everything we talk about is confidential between us and the healthcare team, except when there is an immediate threat to someone.
+- My name is...
+- Call me...
+- I'm a...
+- I'm here to...
+- Call you?
+- I want to assure you that everything we talk about is confidential between us and the healthcare team, except when there is an immediate threat to someone.
 
 ## Chief Complain
 
-?
+- What's up
 
 ## History of Present Illness
 
-Tell more?
-
-Mood?
-
-Build story
+- Talk more
+- Mood
+- Onset
+- Trigger
+- Impact to life
+- Build story
 
 ## Medication
 
-What, how much, adherence?
+- What
+- How much
+- Adherence
 
-## Screening
+## Psychiatric Review of System
 
-Anxiery
+Anxiety
 
 - Worry
 - Trouble relaxing
 - Irritability
+- Compulsive behavior
+- Nightmare
 
-Depression (1 required + 5)
+Depression (1 required + 5 + impairment for 2 weeks)
 
-- **I**nterests low (required)
-- **M**ood low (required)
-- **S**leep low or high
-- **G**uitiness high
-- **E**nergy low
-- **C**oncentration low
-- **A**ppetite low or high
-- **P**sychomotor low or high
-- **S**uicide passive or active
-- **2 week**
-- **Impairment**
+- Interests low (required)
+- Mood low (required)
+- Sleep low or high
+- Guitiness high
+- Energy low
+- Concentration low
+- Appetite low or high
+- Psychomotor low or high
+- Suicide passive or active
 
-Mania (3 | 4 with irritability)
+Mania ([3 | 4 with irritability] + impairment for 1 week)
 
-- **P**ace high
-- **O**utlandish high
-- **R**acing thoughts
-- **J**udgement low
-- **D**istractability high
-- **G**randioseness high
-- **E**nergy high
-- **S**leep low
-- **1 week**
-- **Impairment**
+- Pace high
+- Outlandish high
+- Racing thoughts
+- Judgement low
+- Distractability high
+- Grandioseness high
+- Energy high
+- Sleep low
 
-Psychosis (1 required + 2)
+Psychosis (1 required + 2 + impairment for 6 months)
 
 - Hallucination (required)
 - Delusion (false and fixed belief) (required)
 - Thought disorder (affects speech) (required)
 - Disorganized behavior (not functional)
 - Any negative symptoms (lack of: affect, words, motivation, emotion, or socialization)
-- **6 month**
-- **Impairment**
 
 ## Psychiatric History
 
-If the patient denies any X, then list some examples of X and ask again.
+- First professional psychiatric contact
+- Psychiatric diagnosis
+- Psychotherapy
+- Psychiatric medications
+- Psychiatric hospitalization
+- Self harm
+- Suicidal
+- Homocidal
+- Trauma (list examples and ask again)
+- Violence
 
-"Can you tell me about when your first professional psychiatric contact was please?"
-
-"Can you tell me about your diagnoses please?"
-
-"Have you ever had psychotherapy?"
-
-"Have you ever been hospitalized for any psychiatric reasons?"
-
-"Can you tell me about your experiences with any psychiatric medications?"
-
-"Have you ever hurt yourself?"
-
-"Have you ever thought about ending your own life?"
-
-"Have you had any trauma?"
-
-"Can you tell me about your experience with violence?"
-
-## Childhood
+## (Childhood)
 
 ## Family Psychiatry
 
@@ -110,14 +95,12 @@ Include substance and suicide
 
 ## Substance History
 
-Ask about:
-
 - First time
 - Last time
 - Amount
 - Frequency
 - Longest sober duration
-- Treatment for substance use
+- Treatment
 
 - Alcohol
 - Tabacco
@@ -129,36 +112,20 @@ Ask about:
 
 ## Social History
 
-Home
-
-Sleep
-
-Diet
-
-Exercise
-
-Education
-
-Employment
-
-Hobby
-
-Spirituality
-
-Family
-
-Partner
-
-Sex
-
-Crime
-
-Safety
-
-Community
-
-Support
+- Home
+- Sleep
+- Diet
+- Exercise
+- Education
+- Employment
+- Hobby
+- Spirituality
+- Family
+- Partner
+- Sex
+- Law
+- Safety
+- Community
+- Support
 
 ## Medical History
-
-Allergy

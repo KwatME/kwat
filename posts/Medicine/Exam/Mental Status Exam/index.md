@@ -5,6 +5,10 @@ time: 2021-01-19 17:12:38.698118
 title: Mental Status Exam
 ---
 
+Psychiatric physical exam
+
+Do it at every encounter
+
 ## Appearance
 
 ## Behavior
@@ -13,7 +17,7 @@ title: Mental Status Exam
 
 ## Mood (stated emotion)
 
-Patient's own words
+Quote patient's words
 
 ## Affect (observed emotion)
 
@@ -21,14 +25,28 @@ Patient's own words
 
 ## Thought Content
 
-## Congition
+## Perception (hallucination)
 
-## Defense
-
-## Insight
+## Insight (psychiatric problem self awareness)
 
 ## Judgement
 
-![](mmse1.png)
+## Congition
 
-![](mmse2.png)
+## Examples
+
+![](image/mmse1.png)
+
+![](image/mmse2.png)
+
+Normal
+
+![](image/normal.png)
+
+Depressed
+
+![](image/depressed.png)
+
+Psychotic
+
+![](image/psychotic.png)
