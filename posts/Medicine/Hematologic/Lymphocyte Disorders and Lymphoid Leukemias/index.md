@@ -20,6 +20,10 @@ Perhaps these cells are making more stuff.
 
 ![](image/leukemial.png)
 
+Lymphocytes can look like monocytes.
+
+![](image/lymphocyteormonocyte.png)
+
 ## In a normal process like infection, your body also makes more lymphocytes.
 
 Specific infection results in lymphocytosis.
