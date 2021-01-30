@@ -64,6 +64,8 @@ This antibody carries toxins that can penetrate into the bound cancer cell and d
 Chimetic antigen receptor T cell is an engineered T cell that recognizes and eliminates cancer cells.
 A patient's own T cell is manipulated to be able to react to the cancer cell.
 
+A child with leukemia die in days without treatment.
+
 ## Philadelphia chromosome is a specific mutation assocaited with leukemia.
 
 This mutation fuses BCR and ABL genes in a B cell.
@@ -75,11 +77,24 @@ Luckily, there is BCR-ABL inhibitors like imatinib and dasatinib, which are effe
 ## Chronic lymphocytic leukemia (CLL) is the most common adult leukemia.
 
 CLL is the cancer of mature lymphocytes.
+99% of CLL originates from B cell lineage.
 
 Averate onset is 70.
 Most patients are asymptomatic at diagnosis.
 Symptoms can be mild, in which patients die from other typical causes.
 Symptoms can also be severe, in which the patients die from the CLL in few years.
+
+As in the case of follicular lymphoma, treatment starts with monitoring.
+
+## Immature lymphocytes are bigger than the mature ones.
+
+The immature ones have more homogeneous nucleus.
+
+![](image/Immature and Mature Lymphocytes.png)
+
+The mature ones have blocked nucleus.
+
+![](image/Mature Lymphocytes in the Marrow.png)
 
 ## There are many types of chronic lymphoproliferative disorders.
 

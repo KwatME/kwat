@@ -58,3 +58,8 @@ Never rush.
 Tell the patient what is next.
 
 "It was good seeing you today PATIENTNAME. Take care."
+
+## Notes
+
+Losing weight is difficult.
+So even if a patient endorses intentional weight loss, be suspicious.

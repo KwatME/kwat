@@ -17,13 +17,19 @@ Percuss abdomen.
 
 Percuss liver and size it.
 
+()
+
 Percuss spleen (deep breath).
+
+(Spleen's unpalpable portion is 7cm.)
 
 Palpate abdomen superficially.
 
 Palpate abdomen deeply.
 
 Palpate liver (deep breath).
+
+(Liver's unpalpable portion is 9cm.)
 
 Palpate (sandwitch) spleen (deep breath).
 
@@ -129,6 +135,8 @@ Check range of motion:
 - Rotate
 
 Touch lymphnode.
+
+(A proper lymphnode test is putting a patient in a gown and checking all palpable lymphnodes.)
 
 Touch larynx.
 

@@ -68,3 +68,16 @@ EBV is not sensitive to acyclovir.
 Rituximab is anti B cell.
 
 Strep is anterior exudative while EBV is posterior exudative.
+
+The prevelance of shingles in old people is 15-20%.
+The prevelance of pneumonia in older people is 10%.
+
+Inguinal and axilar lymphnodes are larger than the rest of palpable ones because these 2 are more active and more fibrosed.
+
+Spleen is a platelet magnet.
+Bigger the spleen, more platelets bind to it.
+
+Suspect congenital causes in children.
+
+Swelling of elbow in the context of low platelet can be from bleeding.
+Swelling of body parts in children should remind of abuse and trauma too.

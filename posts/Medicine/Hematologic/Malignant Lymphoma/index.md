@@ -117,6 +117,12 @@ Diffuse large B cell lymphoma, which is the most common adult lymphoma, can also
 
 ![](image/Diffuse Large B Cell Lymphoma Testis 2.png)
 
+![](image/Diffuse Large B Cell Lymphoma 1.png)
+
+![](image/Diffuse Large B Cell Lymphoma 1.png)
+
+![](image/Diffuse Large B Cell Lymphoma 3.png)
+
 This lymphoma is filled with somewhat mature (CD20+) and bloated B cells.
 
 ![](image/Diffuse Large B Cell Lymphoma Testis CD20.png)
@@ -164,12 +170,19 @@ Expression of ALK is associated with better prognosis.
 
 ![](image/Anaplastic Large Cell Lymphoma 3.png)
 
+## Faster a lymphoma kills, better the prognosis.
+
+![](image/Non-Hodgkin Lymphoma.png)
+
 ## Hodgkin lymphoma is discovered long time ago.
 
 It is a B cell lymphoma.
 But the Hodgkin cells express proteins of B and T cells, like CD30 and CD15.
+Compared to other lymphomas, Hodgkin's lymphoma is more proliferative and sclerosing resulting in bigger affected lymphnodes.
 
 ![](image/Hodgkin Lymphoma 1.png)
+
+![](image/Hodgkin Lymphoma 2.png)
 
 ![](image/Hodgkin Lymphoma CD30 CD15.png)
 
@@ -181,3 +194,7 @@ They are giant and have bilobed nucleus.
 Hodgkin lymphoma was the first cancer cured with radiation.
 
 ![](image/Hodgkin.png)
+
+## Lymphocytosis can be absolute or relative.
+
+![](image/Lymphocytosis.png)
