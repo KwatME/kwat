@@ -11,6 +11,15 @@ Focus on the relevant conditions.
 Summarize the patient's last 24 hours.
 Plan the patient's next 24 hours.
 
+1. Visit a patient to check if available.
+2. Review chart to identify:
+- Cause
+- Problems
+- Relevant data
+- Plan
+3. Interview and exam the patient.
+4. Write progress report.
+
 ## ID
 
 The patient is a AGE year old SEX with history of RELEVANTPASTMEDICALHISTORY, who has been cared for CHIEFCOMPLAIN since ENCOUNTERTIME.

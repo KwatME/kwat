@@ -26,4 +26,4 @@ We don't know how it works.
 Peripherally, it relieves congestion, sneezing, and sore threat.
 Centrally, it decreases awakeness and increases eating (histamine increases awakeness and suppresses eating).
 
-## Peripherally is a nasal decongestant.
+## Phenylephrine is a nasal decongestant.
